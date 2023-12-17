@@ -87,3 +87,8 @@ body {
     width: 15px;
     height: 15px;
 }
+
+
+@media(max-width: 690px) {
+    
+}

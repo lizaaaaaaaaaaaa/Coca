@@ -6,6 +6,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animate.css">
     <title>Coca</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,15 +14,15 @@
     
     <header class="header">
         <div class="container header__inner">
-            <img src="images/logo.svg" alt="" class="logo">
+            <img src="images/logo.svg" alt="" class="logo wow fadeInLeft" data-wow-delay="0s">
             <div class="header__links">
-                <nav class="nav">
+                <nav class="nav wow fadeInRight" data-wow-delay="0.5s">
                     <a href="#" class="nav__item">Home</a>
                     <a href="#" class="nav__item">About</a>
                     <a href="#" class="nav__item">Blog</a>
                     <a href="#" class="nav__item">Pricing</a>
                 </nav>
-                <button class="header__btn">
+                <button class="header__btn wow fadeInRight" data-wow-delay="1s">
                     <span>Contact Us</span>
                     <svg class="header__arrow">
                         <use xlink:href="#arrow"></use>
@@ -39,8 +40,10 @@
         <symbol id="arrow" viewBox="0 0 18 18">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M9.26341 2.9638C9.61488 2.61233 10.1847 2.61233 10.5362 2.9638L15.9362 8.3638C16.2877 8.71527 16.2877 9.28512 15.9362 9.63659L10.5362 15.0366C10.1847 15.3881 9.61488 15.3881 9.26341 15.0366C8.91194 14.6851 8.91194 14.1153 9.26341 13.7638L13.127 9.9002L2.69981 9.9002C2.20275 9.9002 1.7998 9.49725 1.7998 9.0002C1.7998 8.50314 2.20275 8.1002 2.69981 8.1002H13.127L9.26341 4.23659C8.91194 3.88512 8.91194 3.31527 9.26341 2.9638Z"/>
         </symbol>
-      </svg>
-    <script src="js/main.js"></script>
+    </svg>
+
+    <script src="js/wow.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
