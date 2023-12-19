@@ -11,7 +11,7 @@ body {
   line-height: 1.7;
   color: var(--black);
   background-color: #fff;
-  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 html,
@@ -19,6 +19,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -225,7 +226,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .intro__title {
@@ -235,7 +235,8 @@ footer {
     line-height: 1.2;
     letter-spacing: -3px;
     padding-bottom: 114px;
-    min-width: 617px;
+    word-wrap: break-word;
+    max-width: 100%;
 }
 
 .intro__text {
@@ -245,6 +246,8 @@ footer {
     letter-spacing: -1px;
     padding-left: 103px;
     position: relative;
+    word-wrap: break-word;
+    max-width: 100%;
 }
 
 .intro__text::before {
@@ -292,12 +295,12 @@ footer {
     display: flex;
     justify-content: space-between;
     gap: 0 80px;
-    min-width: 419px;
+    min-width: 420px;
     color: #5C616E;
+    font-size: 14px;
 }
 
 .intro__name {
-    font-size: 14px;
     font-weight: 600;
     line-height: 1.4;
     padding-bottom: 4px;
@@ -474,6 +477,25 @@ footer {
   height: 621px;
 }
 
+@media (max-width: 1065px) {
+
+    .intro__stat {
+        flex-direction: row;
+        padding-top: 65px;
+    }
+
+    .intro__inner {
+        padding-top: 35px;
+        padding-bottom: 71px;
+        display: block;
+    }
+
+    .intro__growth {
+        top: 20px;
+        left: 330px;
+    }
+}
+
 @media (max-width: 960px) {
   .footer__bottom {
     -webkit-box-orient: vertical;
@@ -489,6 +511,40 @@ footer {
   .footer__links-desktop {
     width: 100%;
   }
+}
+
+@media (max-width: 820px) {
+    .intro__stat {
+        flex-direction: column;
+    }
+
+    .intro__list {
+        min-width: 335px;
+        gap: 0 20px;
+    }
+
+    .intro__price {
+        font-size: 16px;
+    }
+
+    .intro__title {
+        font-size: 60px;
+        padding-bottom: 54px;
+    }
+
+    .intro__text {
+        font-size: 26px;
+        padding-left: 65px;
+    }
+
+    .intro__text::before {
+        width: 50px;
+        top: 15px;
+    }
+
+    .intro__growth {
+        left: 58%;
+    }
 }
 
 @media (max-width: 775px) {
@@ -529,6 +585,7 @@ footer {
     width: 50px;
     top: 13px;
   }
+
 }
 
 @media (max-width: 690px) {
@@ -601,6 +658,30 @@ footer {
   .footer__btn {
     margin-left: 65px;
   }
+
+  .intro__sales {
+    width: 495px;
+  }
+
+  .intro__growth {
+    width: 278px;
+    left: 58%;
+  }
+
+  .intro__title {
+    font-size: 52px;
+    letter-spacing: -1px;
+  }
+
+  .intro__text {
+    font-size: 20px;
+    padding-left: 40px;
+  }
+
+  .intro__text::before {
+    width: 30px;
+    top: 10px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -621,6 +702,30 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     font-size: 14px;
+  }
+
+  .intro__title {
+    font-size: 32px;
+  }
+
+  .intro__text {
+    font-size: 16px;
+    padding-left: 32px;
+  }
+
+  .intro__text::before {
+    width: 24px;
+    top: 10px;
+  }
+
+  .intro__input {
+    min-width: 219px;
+    padding: 0 0 16px;
+  }
+
+  .intro__btn {
+    min-width: 108px;
+    padding: 8px 16px;
   }
 }
 
