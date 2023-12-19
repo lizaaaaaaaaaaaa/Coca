@@ -4,21 +4,15 @@
 
 body {
   font-family: "Inter", sans-serif;
-  /* font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif; */
   font-size: 16px;
   font-weight: 400;
   line-height: 1.7;
   color: var(--black);
   background-color: #fff;
-  overflow-y: scroll;
 }
 
 html,
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
 }
 
@@ -48,9 +42,6 @@ footer {
   max-width: 1240px;
   padding: 0 20px;
   margin: 0 auto;
-}
-
-.wrapper {
 }
 
 .btn {
@@ -208,6 +199,10 @@ footer {
     width: 18px;
 }
 
+.intro {
+    position: relative;
+}
+
 .intro__inner {
     display: flex;
     justify-content: space-between;
@@ -335,6 +330,37 @@ footer {
     fill: #E35454;
     transform: rotate(90deg);
 }
+
+.intro__circle-orange {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    z-index: -1;
+}
+
+.intro__circle-green {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    z-index: -1;
+}
+
+.overview {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
   position: relative;
