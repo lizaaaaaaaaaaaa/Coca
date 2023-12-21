@@ -419,12 +419,16 @@ footer {
 }
 
 .features__stat {
-    flex: 1 1 65%;
+    width: 51%;
     height: 651px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.features__content {
+    width: 49%;
 }
 
 .features__info {
@@ -461,7 +465,9 @@ footer {
 }
 
 .features__item:first-child {
-    padding-bottom: 45px;
+    border-bottom: 0.7px solid #EDEDED;
+    margin-bottom: 22.5px;
+    padding-bottom: 22.5px;
 }
 
 .features__name {
@@ -508,7 +514,6 @@ footer {
     font-size: 10px;
     font-weight: 500;
     line-height: 1.5;
-    padding-bottom: 7px;
 }
 
 .features__add {
@@ -524,6 +529,7 @@ footer {
     font-weight: 500;
     color: #7e8492;
     padding: 24px 0 40px;
+    max-width: 360px;
 }
 
 .features__preferences {
@@ -740,6 +746,10 @@ footer {
   .footer__links-desktop {
     width: 100%;
   }
+
+  .title {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 820px) {
@@ -773,6 +783,41 @@ footer {
 
     .intro__growth {
         left: 58%;
+    }
+
+    .features__subtitle {
+        font-size: 14px;
+        padding: 24px 0;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .features__inner {
+        gap: 0 30px;
+    }
+
+    .features__preferences {
+        gap: 20px 0;
+    }
+
+    .features__name {
+        padding: 0;
+    }
+
+    .features__cost {
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .features__img {
+        width: 57px;
+        height: 57px;
+    }
+
+    .features__info {
+        width: 230px;
     }
 }
 
@@ -833,6 +878,10 @@ footer {
     font-size: 25px;
     padding-bottom: 20px;
     min-height: 87px;
+  }
+
+  .features {
+    padding: 115px 0;
   }
 
 }
@@ -935,6 +984,32 @@ footer {
   .intro__list {
     font-size: 11px;
   }
+
+  .title {
+    font-size: 31px;
+  }
+
+  .features__inner {
+    flex-direction: column;
+    gap: 45px 0;
+  }
+
+  .features__stat {
+    width: 100%;
+  }
+
+  .features__content {
+    width: 100%;
+  }
+
+  .features__preferences li {
+    font-size: 14px;
+    max-width: 410px;
+  }
+
+  .features {
+    padding: 100px 0;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1014,6 +1089,14 @@ footer {
   .overview__text {
     font-size: 14px;
   }
+
+  .features {
+    padding: 73px 0;
+  }
+
+  .features__stat {
+    height: 450px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -1054,5 +1137,60 @@ footer {
 
   .overview__title {
     font-size: 18px;
+  }
+
+  .features {
+    padding: 56px 0;
+  }
+
+  .features__stat {
+    height: 374px;
+  }
+
+  .features__info {
+    max-width: 177px;
+  }
+
+  .features__add {
+    font-size: 5px;
+  }
+
+  .features__cost {
+    font-size: 14px;
+  }
+
+  .features__item {
+    gap: 0 15px;
+  }
+
+  .features__number {
+    font-size: 8px;
+  }
+
+  .features__arrow {
+    width: 12px;
+    height: 12px;
+  }
+
+  .features__info {
+    padding: 9.5px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .features__item:first-child {
+    border-bottom: 0.4px solid #EDEDED;
+    margin-bottom: 13.5px;
+    padding-bottom: 13.5px;
+}
+
+  .features__title {
+    font-size: 9.5px;
+    letter-spacing: 0.5px;
+  }
+
+  .features__btn {
+    width: 10px;
+    height: 10px;
   }
 }
