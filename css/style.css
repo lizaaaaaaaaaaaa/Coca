@@ -546,6 +546,82 @@ footer {
     font-weight: 500;
 }
 
+.strength {
+    padding: 66px 0 160px;
+}
+
+.strength__list {
+    display: flex;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.strength__item {
+    margin-right: 72px;
+    padding-right: 72px;
+    border-right: 1px solid #CED1D8;
+}
+
+.strength__item:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border: none;
+}
+
+.strength__number {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding-bottom: 8px;
+}
+
+.strength__add {
+    font-weight: 500;
+    color: #7E8492;
+    font-size: 18px;
+}
+
+.strength__img {
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.strength__descr {
+    display: flex;
+    gap: 0 24px;
+    justify-content: space-between;
+    padding-bottom: 160px;
+}
+
+
+.strength__text {
+    max-width: 421px;
+    font-weight: 500;
+    color: #7E8492;
+    font-size: 18px;
+}
+
+.strength__companies {
+    padding: 102.5px 45px;
+    border-top: 1px solid #CED1D8;
+    border-bottom: 1px solid #CED1D8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 30px;
+}
+
+.strength__add-last {
+    max-width: 323px;
+}
+
+.strength__logos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    gap: 31px 30px;
+}
+
 
 
 
