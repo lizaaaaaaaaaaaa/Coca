@@ -438,9 +438,6 @@ footer {
     padding-top: 80px;
 }
 
-.overview__item {
-}
-
 .overview__img {
     padding-bottom: 24px;
 }
@@ -637,17 +634,14 @@ footer {
 }
 
 .strength {
-    padding: 66px 0 160px;
+    padding-bottom: 160px;
 }
 
 .strength__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 144px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    gap: 64px 144px;
     padding-bottom: 80px;
 }
 
@@ -682,6 +676,7 @@ footer {
     font-weight: 500;
     color: #7E8492;
     font-size: 18px;
+    max-width: 199px;
 }
 
 .strength__img {
@@ -693,7 +688,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 0 24px;
+    gap: 0 54px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -709,7 +704,7 @@ footer {
 }
 
 .strength__companies {
-    padding: 102.5px 45px;
+    padding: 102.5px 0;
     border-top: 1px solid #CED1D8;
     border-bottom: 1px solid #CED1D8;
     display: -webkit-box;
@@ -722,6 +717,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 0 30px;
+    justify-content: space-evenly;
 }
 
 .strength__add-last {
@@ -898,12 +894,28 @@ footer {
 
 
 
+@media (max-width: 1196px) {
+    .strength__list {
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .strength__item:nth-child(2):after {
+        content: none;
+    }
+
+    .strength__item::after {
+        left: 130%;
+    }
+
+    .strength__add {
+        max-width: 100%;
+    }
+}
 
 
 
-
-
-@media (max-width: 1067px) {
+@media (max-width: 1065px) {
 
     .intro__stat {
         flex-direction: row;
@@ -919,6 +931,21 @@ footer {
     .intro__growth {
         top: 20px;
         left: 330px;
+    }
+
+    .title {
+        font-size: 46px;
+      }
+}
+
+@media (max-width: 995px) {
+    .strength__logos {
+        grid-template-columns: auto auto;
+        gap: 15px;
+    }
+
+    .strength__add {
+        max-width: 390px;
     }
 }
 
@@ -940,6 +967,14 @@ footer {
 
   .title {
     font-size: 40px;
+  }
+
+  .strength__text {
+    max-width: 361px;
+  }
+
+  .strength__number {
+    font-size: 48px;
   }
 }
 
@@ -1013,6 +1048,19 @@ footer {
     .features__info {
         width: 230px;
     }
+
+    .strength__text,
+    .strength__add {
+        font-size: 16px;
+    }
+
+    .strength__descr {
+        padding-bottom: 100px;
+    }
+
+    .strength {
+        padding-bottom: 100px;
+    }
 }
 
 @media (max-width: 775px) {
@@ -1077,7 +1125,6 @@ footer {
   .features {
     padding: 115px 0;
   }
-
 }
 
 @media (max-width: 690px) {
@@ -1207,6 +1254,31 @@ footer {
   .features {
     padding: 100px 0;
   }
+
+  .strength__list {
+    gap: 40px 80px;
+  }
+
+  .strength__item::after {
+    left: 115%;
+  }
+
+  .strength__number {
+    font-size: 40px;
+  }
+
+  .strength__descr {
+    flex-direction: column;
+    gap: 32px 0;
+  }
+
+  .strength__text {
+    max-width: 100%;
+  }
+
+  .strength__companies {
+    padding: 62px 0;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1294,6 +1366,48 @@ footer {
   .features__stat {
     height: 450px;
   }
+
+  .strength__list {
+    gap: 16px 32px;
+  }
+
+  .strength__item::after {
+    left: 105%;
+    max-width: 180px;
+    height: 64px;
+  }
+
+  .strength__add {
+    max-width: 175px;
+  }
+
+  .strength__number {
+    font-size: 32px;
+  }
+
+  .strength__descr {
+    padding-bottom: 80px;
+}
+
+.strength {
+    padding-bottom: 80px;
+}
+
+.strength__companies {
+    display: block;
+}
+
+.strength__stat {
+    padding-bottom: 32px;
+}
+
+.strength__logos {
+    justify-content: center;
+}
+
+.strength__add-last {
+    max-width: 100%;
+}
 }
 
 @media (max-width: 460px) {
@@ -1390,4 +1504,48 @@ footer {
     width: 10px;
     height: 10px;
   }
+
+  .strength__descr {
+    gap: 16px 0;
+  }
+
+  .strength__text {
+    font-size: 14px;
+  }
+
+  .strength__descr {
+    padding-bottom: 66px;
+}
+
+.strength {
+    padding-bottom: 66px;
+}
+
+.strength__logo {
+    width: 125px;
+}
+
+.strength__add {
+    font-size: 14px;
+}
+
+.strength__companies {
+    border: none;
+    padding: 0;
+}
+}
+
+@media (max-width: 380px) {
+    .strength__add {
+        max-width: 158px;
+        font-weight: 400;
+    }
+
+    .strength__descr {
+        padding-bottom: 56px;
+    }
+
+    .strength {
+        padding-bottom: 56px;
+    }
 }
