@@ -803,6 +803,113 @@ footer {
   transition: transform 0.2s;
 }
 
+.insight {
+    padding-bottom: 160px;
+}
+
+.insight__title {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -2px;
+}
+
+.insight__subtitle {
+    text-align: center;
+    padding: 24px 0 80px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #7E8492;
+}
+
+.insight__slider {
+    position: relative;
+}
+
+.insight__slider .slick-list {
+	overflow: hidden;
+}
+
+.insight__slider .slick-track {
+	display: flex;
+    gap: 32px;
+}
+
+.insight__slider .slick-arrow {
+	position: absolute;
+	z-index: 100;
+	top: 50%;
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+}
+
+.insight__slider .slick-prev {
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M14.9998 26.6668L8.33317 20.0002L14.9998 13.3335" stroke="%237E8492" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+	left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.insight__slider .slick-next {
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" transform="rotate(180)"><path d="M14.9998 26.6668L8.33317 20.0002L14.9998 13.3335" stroke="%237E8492" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+	left: 50.5%;
+    transform: translate(-50.5%, -50%);
+}
+
+.insight__slider::after {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="40" fill="white"/></svg>');
+    position: absolute;
+    display: block;
+    z-index: 99;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    opacity: 0.99;
+    left: 50.3%;
+    transform: translate(-50.3%, -50%);
+}
+
+.insight__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #7E8492;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.insight__name {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.64px;
+    width: 100%;
+    max-width: 582px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer {
   position: relative;
 }
@@ -943,6 +1050,19 @@ footer {
   width: 621px;
   height: 621px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1196px) {
   .strength__list {

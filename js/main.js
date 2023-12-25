@@ -26,3 +26,10 @@ menuBtn.addEventListener('click', () => {
     menuBody.classList.toggle('header__links--active');
     menuBtn.classList.toggle('burger--active');
 });
+
+$('.insight__slider').slick({
+    arrows: true,
+    // slidesToShow: 'auto',
+    variableWidth: true,
+    // slidesToScroll: 1,
+  });
