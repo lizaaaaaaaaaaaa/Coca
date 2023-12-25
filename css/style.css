@@ -877,6 +877,7 @@ footer {
     color: #7E8492;
     font-size: 14px;
     line-height: 1.5;
+    padding: 16px 0;
 }
 
 .insight__name {
@@ -1105,7 +1106,8 @@ footer {
     left: 330px;
   }
 
-  .title {
+  .title,
+  .insight__title {
     font-size: 46px;
   }
 }
@@ -1142,7 +1144,8 @@ footer {
     width: 100%;
   }
 
-  .title {
+  .title,
+  .insight__title {
     font-size: 40px;
   }
 
@@ -1196,7 +1199,8 @@ footer {
     padding: 24px 0;
   }
 
-  .title {
+  .title,
+  .insight__title {
     font-size: 38px;
   }
 
@@ -1242,6 +1246,14 @@ footer {
   .services {
     padding-bottom: 100px;
   }
+
+  .insight__subtitle {
+    padding: 22px 0 50px;
+  }
+
+  .insight {
+    padding-bottom: 100px;
+  }
 }
 
 @media (max-width: 775px) {
@@ -1283,7 +1295,8 @@ footer {
     top: 13px;
   }
 
-  .title {
+  .title,
+  .insight__title {
     font-size: 35px;
     letter-spacing: 0px;
   }
@@ -1314,6 +1327,20 @@ footer {
 
   .services__inner {
     padding-top: 70px;
+  }
+
+  .insight__img {
+    width: 399px;
+    height: auto;
+  }
+
+  .insight__info,
+  .insight__name {
+    max-width: 399px;
+  }
+
+  .insight__name {
+    font-size: 24px;
   }
 }
 
@@ -1416,7 +1443,8 @@ footer {
     font-size: 11px;
   }
 
-  .title {
+  .title,
+  .insight__title {
     font-size: 31px;
   }
 
@@ -1480,6 +1508,14 @@ footer {
   .services__inner {
     padding-top: 50px;
   }
+
+  .insight__subtitle {
+    padding: 20px 0 44px;
+}
+
+.insight {
+    padding-bottom: 90px;
+}
 }
 
 @media (max-width: 550px) {
@@ -1535,7 +1571,8 @@ footer {
     gap: 30px;
   }
 
-  .title {
+  .title,
+  .insight__title {
     font-size: 24px;
   }
 
@@ -1640,6 +1677,60 @@ footer {
   .services {
     padding-bottom: 80px;
   }
+
+  .insight__img {
+    width: 299px;
+    height: auto;
+  }
+
+  .insight__info,
+  .insight__name {
+    max-width: 299px;
+  }
+
+  .insight__name {
+    font-size: 18px;
+  }
+
+  .insight__info {
+    font-size: 12px;
+  }
+
+  .insight__slider::after {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="white"/></svg>');
+    width: 40px;
+    height: 40px;
+    top: 33%;
+    left: 65%;
+    transform: translate(-65%, -33%);
+  }
+
+  .insight__slider .slick-track {
+    gap: 16px;
+  }
+
+  .insight__slider .slick-arrow {
+    top: 33%;
+  }
+
+  .insight__slider .slick-prev {
+    left: 65.5%;
+    transform: translate(-65.5%, -33%);
+  }
+
+  .insight__slider .slick-next {
+    left: 64.5%;
+    transform: translate(-64.5%, -33%);
+  }
+
+  .insight__subtitle {
+    font-size: 17px;
+    padding: 20px 0 40px;
+}
+
+.insight {
+    padding-bottom: 80px;
+}
 }
 
 @media (max-width: 460px) {
@@ -1773,6 +1864,15 @@ footer {
   .services__icon {
     padding: 8px;
   }
+
+  .insight__subtitle {
+    font-size: 16px;
+    padding: 18px 0 36px;
+}
+
+.insight {
+    padding-bottom: 66px;
+}
 }
 
 @media (max-width: 380px) {
@@ -1796,4 +1896,16 @@ footer {
   .services {
     padding-bottom: 56px;
   }
+
+  .insight__name {
+    font-size: 16px;
+  }
+
+  .insight__subtitle {
+    padding: 16px 0 32px;
+}
+
+.insight {
+    padding-bottom: 56px;
+}
 }

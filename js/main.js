@@ -29,7 +29,6 @@ menuBtn.addEventListener('click', () => {
 
 $('.insight__slider').slick({
     arrows: true,
-    // slidesToShow: 'auto',
     variableWidth: true,
-    // slidesToScroll: 1,
+    loop: true,
   });
