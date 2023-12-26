@@ -29,6 +29,13 @@ menuBtn.addEventListener('click', () => {
 
 $('.insight__slider').slick({
     arrows: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     variableWidth: true,
-    loop: true,
-  });
+});
+
+$('.testim__slider').slick({
+    arrows: true,
+    infinite: false,
+    adaptiveHeight: false,
+});
