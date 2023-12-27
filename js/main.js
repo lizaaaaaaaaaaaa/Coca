@@ -37,5 +37,7 @@ $('.insight__slider').slick({
 $('.testim__slider').slick({
     arrows: true,
     infinite: false,
-    adaptiveHeight: false,
+    // appendArrows: $('.testim__arrows'),
+    // prevArrow:'<button type="button" class="testim__arrows-prev"><img src="../images/icons/active-arrow.svg"></button>',
+    // nextArrow:'<button type="button" class="testim__arrows-next"><img src="../images/icons/active-arrow.svg"></button>'
 });
