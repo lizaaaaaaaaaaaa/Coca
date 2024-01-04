@@ -1036,6 +1036,11 @@ footer {
   position: relative;
 }
 
+.footer--dark {
+    background-color: var(--black);
+    color: #FFF;
+}
+
 .footer__inner {
   position: relative;
   padding-top: 112px;
