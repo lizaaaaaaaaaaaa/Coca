@@ -1322,6 +1322,31 @@ footer {
     z-index: -1;
 }
 
+.quote {
+    padding-bottom: 160px;
+}
+
+.quote__inner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 50px;
+}
+
+.quote__title {
+    max-width: 480px;
+}
+
+.quote__text {
+    max-width: 522px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+}
 
 
 
