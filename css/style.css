@@ -68,10 +68,6 @@ footer {
   color: #fff;
 }
 
-.title-about {
-    max-width: 959px;
-}
-
 .text {
   font-size: 32px;
   font-weight: 600;
@@ -90,6 +86,14 @@ footer {
   background-color: var(--black);
   left: 0;
   top: 20px;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+  
+.slick-track {
+    display: flex;
 }
 
 .header {
@@ -834,12 +838,7 @@ footer {
   position: relative;
 }
 
-.insight__slider .slick-list {
-  overflow: hidden;
-}
-
 .insight__slider .slick-track {
-  display: flex;
   gap: 32px;
 }
 
@@ -938,13 +937,8 @@ footer {
 .testim__slider .slick-slide {
     max-width: 100%;
 }
-  
-.testim__slider .slick-list {
-    overflow: hidden;
-}
-  
+
 .testim__slider .slick-track {
-    display: flex;
     position: relative;
 }
   
@@ -1211,6 +1205,14 @@ footer {
     margin-top: 118px;
 }
 
+.get-it__title {
+    max-width: 879px;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -3px;
+}
+
 .get-it__text {
     max-width: 738px;
     padding-left: 99px;
@@ -1256,6 +1258,70 @@ footer {
 	transform-origin: 0 63.5px;
     pointer-events: none;
 }
+
+.believe-in {
+    padding-bottom: 160px;
+    position: relative;
+}
+
+.believe-in__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px 0;
+}
+
+.believe-in__slider .slick-track {
+    gap: 0 32px;
+}
+
+.believe-in__slider .slick-track {
+    gap: 0 32px;
+}
+
+.believe-in__img-big {
+    height: 100%;
+}
+
+.believe-in__content {
+    max-width: 502px;
+}
+
+.believe-in__title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: -0.32px;
+}
+.believe-in__text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #7E8492;
+    padding-bottom: 32px;
+}
+
+.believe-in__btn {
+    display: flex;
+    gap: 0 7px;
+    align-items: center;
+}
+
+.believe-in__arrow {
+    width: 12px;
+    height: 12px;
+    fill: #fff;
+    display: block;
+}
+
+.believe-in__back {
+    position: absolute;
+    left: 21px;
+    width: 551px;
+    height: 551px;
+    bottom: -117px;
+    z-index: -1;
+}
+
 
 
 

@@ -49,8 +49,15 @@ $(".testim__slider").slick({
 const text = document.querySelector(".get-it__p p");
 
 text.innerHTML = text.innerText
-	.split("")
-	.map(
-		(char, i) => `<span style="transform:rotate(${i * 9.2}deg)">${char}</span>`
-	)
-	.join("");
+.split("")
+.map(
+	(char, i) => `<span style="transform:rotate(${i * 9.2}deg)">${char}</span>`
+)
+.join("");
+
+$(".believe-in__slider").slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    variableWidth: true,
+});
