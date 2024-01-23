@@ -44,6 +44,21 @@ footer {
   margin: 0 auto;
 }
 
+.section {
+    padding-bottom: 160px;
+}
+
+.title--main {
+  -webkit-font-feature-settings: "calt" off;
+  font-feature-settings: "calt" off;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -3px;
+  padding-bottom: 114px;
+  word-wrap: break-word;
+}
+
 .btn {
   padding: 16px 32px;
   color: #fff;
@@ -111,7 +126,6 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   padding-top: 26px;
-  padding-bottom: 22px;
 }
 
 .logo {
@@ -292,14 +306,6 @@ footer {
 }
 
 .intro__title {
-  -webkit-font-feature-settings: "calt" off;
-  font-feature-settings: "calt" off;
-  font-size: 80px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -3px;
-  padding-bottom: 114px;
-  word-wrap: break-word;
   max-width: 100%;
 }
 
@@ -645,10 +651,6 @@ footer {
   font-weight: 500;
 }
 
-.strength {
-  padding-bottom: 160px;
-}
-
 .strength__list {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -748,10 +750,6 @@ footer {
   gap: 31px 30px;
 }
 
-.services {
-  padding-bottom: 160px;
-}
-
 .sevices__text {
   font-weight: 500;
   color: #7e8492;
@@ -812,10 +810,6 @@ footer {
 .services__item:hover .services__icon {
   transform: scale(1.2);
   transition: transform 0.2s;
-}
-
-.insight {
-  padding-bottom: 160px;
 }
 
 .insight__title {
@@ -893,10 +887,6 @@ footer {
   letter-spacing: -0.64px;
   width: 100%;
   max-width: 582px;
-}
-
-.testim {
-    padding-bottom: 160px;
 }
 
 .testim__top {
@@ -1202,15 +1192,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 118px;
 }
 
 .get-it__title {
     max-width: 879px;
-    font-size: 72px;
-    font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: -3px;
 }
 
 .get-it__text {
@@ -1260,7 +1245,6 @@ footer {
 }
 
 .believe-in {
-    padding-bottom: 160px;
     position: relative;
 }
 
@@ -1269,6 +1253,10 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     gap: 24px 0;
+}
+
+.believe-in__img {
+    display: block;
 }
 
 .believe-in__slider .slick-track {
@@ -1320,10 +1308,6 @@ footer {
     height: 551px;
     bottom: -117px;
     z-index: -1;
-}
-
-.quote {
-    padding-bottom: 160px;
 }
 
 .quote__inner {
@@ -1494,7 +1478,7 @@ footer {
     font-size: 16px;
   }
 
-  .intro__title {
+  .title--main {
     font-size: 60px;
     padding-bottom: 54px;
   }
@@ -1558,23 +1542,11 @@ footer {
     padding-bottom: 100px;
   }
 
-  .strength {
-    padding-bottom: 100px;
-  }
-
-  .services {
-    padding-bottom: 100px;
-  }
-
   .insight__subtitle {
     padding: 22px 0 50px;
   }
 
-  .insight {
-    padding-bottom: 100px;
-  }
-
-  .testim {
+  .section {
     padding-bottom: 100px;
   }
 
@@ -1587,6 +1559,10 @@ footer {
     gap: 24px 0;
     text-align: center;
     justify-content: center;
+  }
+
+  .get-it {
+    padding: 75px 0 105px;
   }
 }
 
@@ -1776,7 +1752,7 @@ footer {
     left: 58%;
   }
 
-  .intro__title {
+  .title--main {
     font-size: 52px;
     letter-spacing: -1px;
   }
@@ -1853,10 +1829,6 @@ footer {
     padding: 62px 0;
   }
 
-  .services {
-    padding-bottom: 90px;
-  }
-
   .services__inner {
     padding-top: 50px;
   }
@@ -1865,8 +1837,7 @@ footer {
     padding: 20px 0 44px;
   }
 
-  .insight,
-  .testim {
+  .section {
     padding-bottom: 90px;
   }
 
@@ -1881,6 +1852,30 @@ footer {
 
   .testim__rate {
     padding-bottom: 15px;
+  }
+
+  .believe-in__item {
+    display: none;
+  }
+
+  .believe-in__item.believe-in__item--mobile {
+    display: block;
+  }
+
+  .believe-in__content {
+    width: 100%;
+  }
+
+  .believe-in__item--mobile .believe-in__img {
+    width: 100%;
+  }
+  
+  .believe-in__title {
+    padding-top: 18px;
+  }
+
+  .get-it {
+    padding: 65px 0 85px;
   }
 }
 
@@ -1919,6 +1914,16 @@ footer {
     .testim__img {
         width: 55px;
     }
+
+    .believe-in__title {
+        font-size: 26px;
+    }
+
+    .believe-in__text {
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 24px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -1941,7 +1946,7 @@ footer {
     font-size: 14px;
   }
 
-  .intro__title {
+  .title--main {
     font-size: 32px;
   }
 
@@ -2030,10 +2035,6 @@ footer {
     padding-bottom: 80px;
   }
 
-  .strength {
-    padding-bottom: 80px;
-  }
-
   .strength__companies {
     display: block;
   }
@@ -2075,10 +2076,6 @@ footer {
   .services__name {
     font-size: 16px;
     padding-bottom: 8px;
-  }
-
-  .services {
-    padding-bottom: 80px;
   }
 
   .insight__img {
@@ -2131,8 +2128,7 @@ footer {
     padding: 20px 0 40px;
   }
 
-  .insight,
-  .testim {
+  .section {
     padding-bottom: 80px;
   }
 
@@ -2143,6 +2139,14 @@ footer {
 
   .testim__comment {
     font-size: 20px;
+  }
+
+  .believe-in__title {
+    font-size: 23px;
+  }
+
+  .get-it {
+    padding: 55px 0 65px;
   }
 }
 
@@ -2253,10 +2257,6 @@ footer {
     padding-bottom: 66px;
   }
 
-  .strength {
-    padding-bottom: 66px;
-  }
-
   .strength__logo {
     width: 125px;
   }
@@ -2270,10 +2270,6 @@ footer {
     padding: 0;
   }
 
-  .services {
-    padding-bottom: 66px;
-  }
-
   .services__icon {
     padding: 8px;
   }
@@ -2283,8 +2279,7 @@ footer {
     padding: 18px 0 36px;
   }
 
-  .insight,
-  .testim {
+  .section {
     padding-bottom: 66px;
   }
 
@@ -2320,6 +2315,20 @@ footer {
   .testim__star {
     width: 16px;
   }
+
+  .believe-in__title {
+    font-size: 20px;
+  }
+
+  .believe-in__text {
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 16px;
+  }
+
+  .get-it {
+    padding: 42px 0 48px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -2332,16 +2341,8 @@ footer {
     padding-bottom: 56px;
   }
 
-  .strength {
-    padding-bottom: 56px;
-  }
-
   .services__descr {
     font-size: 11px;
-  }
-
-  .services {
-    padding-bottom: 56px;
   }
 
   .insight__name {
@@ -2352,8 +2353,7 @@ footer {
     padding: 16px 0 32px;
   }
 
-  .insight,
-  .testim {
+  .section {
     padding-bottom: 56px;
   }
 
@@ -2363,6 +2363,14 @@ footer {
 
   .testim__text {
     max-width: 229px;
+  }
+
+  .believe-in__title {
+    font-size: 18px;
+  }
+
+  .get-it {
+    padding: 32px 0 34px;
   }
 }
 

@@ -1,11 +1,9 @@
 const nav = document.querySelector(".nav");
 const button = document.querySelector(".header__btn");
 
+var width =window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
 function addWow() {
-  var width =
-    window.innerWidth ||
-    document.documentElement.clientWidth ||
-    document.body.clientWidth;
 
   if (width > 690) {
     nav.classList.add("wow", "fadeInRight");
@@ -55,9 +53,11 @@ text.innerHTML = text.innerText
 )
 .join("");
 
-$(".believe-in__slider").slick({
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    variableWidth: true,
-});
+if (width > 690) {
+    $(".believe-in__slider").slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        variableWidth: true,
+    });
+}
