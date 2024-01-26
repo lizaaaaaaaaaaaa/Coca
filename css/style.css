@@ -1446,6 +1446,11 @@ footer {
   .text {
     font-size: 33px;
   }
+
+  .quote__text {
+    font-size: 21px;
+    max-width: 452px;
+  }
 }
 
 @media (max-width: 830px) {
@@ -1460,6 +1465,16 @@ footer {
 
   .text {
     font-size: 29px;
+  }
+
+  .quote__text {
+    font-size: 18px;
+    max-width: 362px;
+  }
+
+  .quote__inner {
+    padding-top: 72px;
+    padding-bottom: 72px;
   }
 }
 
@@ -1685,6 +1700,11 @@ footer {
     width: 60px;
     top: 15px;
   }
+
+  .quote__inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 690px) {
@@ -1892,6 +1912,16 @@ footer {
   .get-it {
     padding: 65px 0 85px;
   }
+
+  .quote__inner {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 24px 0;
+  }
+
+  .quote__text {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1970,6 +2000,15 @@ footer {
 
   .get-it__content {
     gap: 10px 0;
+  }
+
+  .quote__text {
+    font-size: 16px;
+  }
+
+  .quote__inner {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }
 
@@ -2208,6 +2247,11 @@ footer {
   .get-it__text {
     padding-left: 50px;
   }
+
+  .quote__inner {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -2426,6 +2470,15 @@ footer {
     height: 312px;
     left: -37px;
     bottom: 76px;
+  }
+
+  .quote__inner {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .quote__text {
+    font-size: 14px;
   }
 }
 
