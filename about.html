@@ -1,243 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <title>Coca</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container header__inner">
-            <a href="index.html">
-                <img src="images/logo.svg" alt="" class="logo wow fadeInLeft">
-            </a>
-            <div class="header__links">
-                <nav class="nav" data-wow-delay="0.5s">
-                    <a href="index.html" class="nav__item">Home</a>
-                    <a href="#" class="nav__item">About</a>
-                    <a href="#" class="nav__item">Blog</a>
-                    <a href="#" class="nav__item">Pricing</a>
-                </nav>
-                <button class="header__btn" data-wow-delay="1s">
-                    <span>Contact Us</span>
-                    <svg class="header__arrow">
-                        <use xlink:href="#arrow"></use>
-                    </svg>
-                </button>
-            </div>
-            <button class="burger wow fadeInRight" data-wow-delay=".2s">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+      <div class="container header__inner">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="" class="logo wow fadeInLeft" />
+        </a>
+        <div class="header__links">
+          <nav class="nav" data-wow-delay="0.5s">
+            <a href="index.html" class="nav__item">Home</a>
+            <a href="#" class="nav__item">About</a>
+            <a href="#" class="nav__item">Blog</a>
+            <a href="#" class="nav__item">Pricing</a>
+          </nav>
+          <button class="header__btn" data-wow-delay="1s">
+            <span>Contact Us</span>
+            <svg class="header__arrow">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </button>
         </div>
+        <button class="burger wow fadeInRight" data-wow-delay=".2s">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
-    
+
     <main class="main">
-        <section class="get-it">
-            <div class="container">
-                <h1 class="title--main get-it__title wow fadeInLeft">
-                    Everything you need to get the attention of your audience
-                </h1>
-                <div class="get-it__content">
-                    <p class="text get-it__text wow fadeInUp" data-wow-delay=".2s">
-                        Our digital agency helps clients develop, implement and maintain successful digital marketing strategies across all channels. Also work with you to build your website and create online businesses that grow.
-                    </p>
-                    <button class="get-it__btn wow fadeInUp" data-wow-delay=".6s">
-                        <img src="images/icons/about-arrow.svg" alt="" class="get-it__arrow">
-                        <div class="get-it__p">
-                            <p>
-                                Get in touch
-                                Get in touch 
-                                Get in touch
-                            </p>
-                        </div>
-                    </button>
-                </div>
-            </div>
-        </section>
+      <section class="get-it">
+        <div class="container">
+          <h1 class="title--main get-it__title wow fadeInLeft">
+            Everything you need to get the attention of your audience
+          </h1>
+          <div class="get-it__content">
+            <p class="text get-it__text wow fadeInUp" data-wow-delay=".2s">
+              Our digital agency helps clients develop, implement and maintain
+              successful digital marketing strategies across all channels. Also
+              work with you to build your website and create online businesses
+              that grow.
+            </p>
+            <button class="get-it__btn wow fadeInUp" data-wow-delay=".6s">
+              <img
+                src="images/icons/about-arrow.svg"
+                alt=""
+                class="get-it__arrow"
+              />
+              <div class="get-it__p">
+                <p>Get in touch Get in touch Get in touch</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
 
-        <section class="believe-in section">
-            <div class="container believe-in__slider wow fadeInRight">
-                <div class="believe-in__item">
-                    <img src="images/believe-in/believein-1.jpg" alt="" class="believe-in__img believe-in__img-big">
+      <section class="believe-in section">
+        <div class="container believe-in__slider wow fadeInRight">
+          <div class="believe-in__item">
+            <img
+              src="images/believe-in/believein-1.jpg"
+              alt=""
+              class="believe-in__img believe-in__img-big"
+            />
+          </div>
+          <div class="believe-in__item believe-in__item--mobile">
+            <img
+              src="images/believe-in/believein-2.jpg"
+              alt=""
+              class="believe-in__img"
+            />
+            <div class="believe-in__content">
+              <h6 class="believe-in__title">What we believe in</h6>
+              <p class="believe-in__text">
+                Over the years at Sans, we’ve put a lot of thought into what it
+                is that makes us who we are. The qualities that unite us, that
+                make us such an effective team, and...
+              </p>
+              <button class="btn believe-in__btn">
+                See Details
+                <svg class="believe-in__arrow">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="believe-in__item">
+            <img
+              src="images/believe-in/believein-3.jpg"
+              alt=""
+              class="believe-in__img"
+            />
+          </div>
+          <div class="believe-in__item">
+            <img
+              src="images/believe-in/believein-1.jpg"
+              alt=""
+              class="believe-in__img believe-in__img-big"
+            />
+          </div>
+          <div class="believe-in__item">
+            <img
+              src="images/believe-in/believein-3.jpg"
+              alt=""
+              class="believe-in__img"
+            />
+          </div>
+        </div>
+        <img src="images/ellipse-orange.png" alt="" class="believe-in__back" />
+      </section>
+
+      <section class="section quote">
+        <div class="container quote__inner">
+          <h1 class="title quote__title wow fadeInUp">
+            Powerful ideas & sales acceleration
+          </h1>
+          <div class="quote__text wow fadeInUp" data-wow-delay=".4s">
+            We are a software development firm specializing in digital products.
+            We build beautiful, functional and cross-platform solutions that are
+            accessible to all.
+          </div>
+        </div>
+      </section>
+
+      <section class="section team">
+        <div class="container">
+          <h1 class="title">
+            Meet our team of creators, designers, and world-class problem
+            solvers
+          </h1>
+          <p class="team__text">
+            To become the company that customers want, it takes a group of
+            passionate people. Get to know the people who lead
+          </p>
+          <div class="team__slider">
+            <div class="team__item">
+              <img src="images/team/team-1.jpg" alt="" class="team__worker" />
+              <div class="team__info">
+                <div class="team__about">
+                  <h4 class="team__name">Arlyne Stefano</h4>
+                  <h6 class="team__job">Founder & CEO</h6>
                 </div>
-                <div class="believe-in__item believe-in__item--mobile">
-                    <img src="images/believe-in/believein-2.jpg" alt="" class="believe-in__img">
-                    <div class="believe-in__content">
-                        <h6 class="believe-in__title">
-                            What we believe in
-                        </h6>
-                        <p class="believe-in__text">
-                            Over the years at Sans, we’ve put a lot of thought into what it is that makes us who we are. The qualities that unite us, that make us such an effective team, and...
-                        </p>
-                        <button class="btn believe-in__btn">
-                            See Details
-                            <svg class="believe-in__arrow">
-                                <use xlink:href="#arrow"></use>
-                            </svg>
-                        </button>
+                <ul class="team__social">
+                  <li>
+                    <a href="" class="team__link">
+                        <img src="images/team/socials/twitter.svg" alt="" class="team__img">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="team__link">
+                        <img src="images/team/socials/insta.svg" alt="" class="team__img">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="team__link">
+                        <img src="images/team/socials/linkedin.svg" alt="" class="team__img">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="team__item">
+                <img src="images/team/team-2.jpg" alt="" class="team__worker" />
+                <div class="team__info">
+                  <div class="team__about">
+                    <h4 class="team__name">Katy Cristy</h4>
+                    <h6 class="team__job">Chief Technology Officer</h6>
+                  </div>
+                  <ul class="team__social">
+                    <li>
+                      <a href="" class="team__link">
+                          <img src="images/team/socials/twitter.svg" alt="" class="team__img">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="team__link">
+                          <img src="images/team/socials/insta.svg" alt="" class="team__img">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="team__link">
+                          <img src="images/team/socials/linkedin.svg" alt="" class="team__img">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="team__item">
+                <img src="images/team/team-3.jpg" alt="" class="team__worker" />
+                <div class="team__info">
+                  <div class="team__about">
+                    <h4 class="team__name">Roger Dzawin</h4>
+                    <h6 class="team__job">Chief Technology Officer</h6>
+                  </div>
+                  <ul class="team__social">
+                    <li>
+                      <a href="" class="team__link">
+                          <img src="images/team/socials/twitter.svg" alt="" class="team__img">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="team__link">
+                          <img src="images/team/socials/insta.svg" alt="" class="team__img">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="team__link">
+                          <img src="images/team/socials/linkedin.svg" alt="" class="team__img">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="team__item">
+                <img src="images/team/team-1.jpg" alt="" class="team__worker" />
+                <div class="team__info">
+                  <div class="team__about">
+                    <h4 class="team__name">Arlyne Stefano</h4>
+                    <h6 class="team__job">Founder & CEO</h6>
+                  </div>
+                  <ul class="team__social">
+                    <li>
+                      <a href="" class="team__link">
+                          <img src="images/team/socials/twitter.svg" alt="" class="team__img">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="team__link">
+                          <img src="images/team/socials/insta.svg" alt="" class="team__img">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="team__link">
+                          <img src="images/team/socials/linkedin.svg" alt="" class="team__img">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+  
+              <div class="team__item">
+                  <img src="images/team/team-2.jpg" alt="" class="team__worker" />
+                  <div class="team__info">
+                    <div class="team__about">
+                      <h4 class="team__name">Katy Cristy</h4>
+                      <h6 class="team__job">Chief Technology Officer</h6>
                     </div>
+                    <ul class="team__social">
+                      <li>
+                        <a href="" class="team__link">
+                            <img src="images/team/socials/twitter.svg" alt="" class="team__img">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="team__link">
+                            <img src="images/team/socials/insta.svg" alt="" class="team__img">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="team__link">
+                            <img src="images/team/socials/linkedin.svg" alt="" class="team__img">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="believe-in__item">
-                    <img src="images/believe-in/believein-3.jpg" alt="" class="believe-in__img">
-                </div>
-                <div class="believe-in__item">
-                    <img src="images/believe-in/believein-1.jpg" alt="" class="believe-in__img believe-in__img-big">
-                </div>
-                <div class="believe-in__item">
-                    <img src="images/believe-in/believein-3.jpg" alt="" class="believe-in__img">
-                </div>
-            </div>
-            <img src="images/ellipse-orange.png" alt="" class="believe-in__back">
-        </section>
 
-        <section class="section quote">
-            <div class="container quote__inner">
-                <h1 class="title quote__title wow fadeInUp">
-                    Powerful ideas & sales acceleration
-                </h1>
-                <div class="quote__text wow fadeInUp" data-wow-delay=".4s">
-                    We are a software development firm specializing in digital products. We build beautiful, functional and cross-platform solutions that are accessible to all.
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer footer--dark">
-        <div class="container footer__inner">
-            <div class="footer__top">
-                <div class="footer__content">
-                    <h1 class="footer__title wow fadeInLeft">Think beyond the wave</h1>
-                    <p class="footer__subtitle footer__subtitle--dark wow fadeInLeft" data-wow-delay=".2s">
-                        Ask about Sans products, pricing, implementation, or anything else. Our highly trained reps are standing by, ready to help
-                    </p>
-                </div>
-                <button class="btn footer__btn footer__btn--dark wow fadeInRight">Try for free</button>
-            </div>
-            <div class="footer__bottom">
-                <div class="footer__descr">
-                    <img src="images/logo-light.svg" alt="" class="logo wow fadeInLeft" data-wow-delay=".5s">
-                    <p class="footer__text footer__text--dark wow fadeInLeft" data-wow-delay="1s">
-                        We built an elegant solution. Our team created a fully integrated sales and marketing solution for SMBs
-                    </p>
-                </div>
-                <div class="footer__links footer__links-desktop">
-                    <ul class="footer__list wow fadeInRight">
-                        <li class="footer__item footer__item-title">Company</li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">About</a>
-                        </li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">Pricing</a>
-                        </li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">Jobs</a>
-                        </li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">Blog</a>
-                        </li>
-                    </ul>
-                    <ul class="footer__list wow fadeInRight" data-wow-delay=".2s">
-                        <li class="footer__item footer__item-title">Product</li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">Discover</a></li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">Sales Software</a></li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">CRM Comparision</a></li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">Marketplace</a></li>
-                    </ul>
-                    <ul class="footer__list wow fadeInRight" data-wow-delay=".4s">
-                        <li class="footer__item footer__item-title">Partner Program</li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">Terms & Conditions</a>
-                        </li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">What is CRM</a>
-                        </li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">Resource</a>
-                        </li>
-                    </ul>
-                    <ul class="footer__list wow fadeInRight" data-wow-delay=".6s">
-                        <li class="footer__item footer__item-title">Help Center</li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">Community</a>
-                        </li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">Knowledge Base</a>
-                        </li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">Academy</a>
-                        </li>
-                        <li class="footer__item footer__item--dark">
-                            <a href="#">Support</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__dark">
-                <ul class="footer__socials">
-                    <li class="wow fadeInRight">
-                        <a href="#">
-                            <img src="images/socials/facebook-dark.svg" alt="" class="footer__img">
-                        </a>
-                    </li>
-                    <li class="wow fadeInRight" data-wow-delay=".1s">
-                        <a href="#">
-                            <img src="images/socials/twitter-dark.svg" alt="" class="footer__img">
-                        </a>
-                    </li>
-                    <li class="wow fadeInRight" data-wow-delay=".2s">
-                        <a href="#">
-                            <img src="images/socials/insta-dark.svg" alt="" class="footer__img">
-                        </a>
-                    </li>
-                    <li class="wow fadeInRight" data-wow-delay=".3s">
-                        <a href="#">
-                            <img src="images/socials/linkedin-dark.svg" alt="" class="footer__img">
-                        </a>
-                    </li>
-                </ul>
-                <ul class="footer__info">
-                    <li class="wow fadeInUp" data-wow-delay=".4s">
-                        <a href="#" class="footer__link">Privacy Policy</a>              
-                    </li>
-                    <li class="wow fadeInUp" data-wow-delay=".4s">
-                        <a href="#" class="footer__link">Terms & Conditions</a>
-                    </li>
-                    <li class="wow fadeInUp" data-wow-delay=".4s">
-                        <a href="#" class="footer__link">Support</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container footer__inner">
+        <div class="footer__top">
+          <div class="footer__content">
+            <h1 class="footer__title wow fadeInLeft">Think beyond the wave</h1>
+            <p
+              class="footer__subtitle footer__subtitle--dark wow fadeInLeft"
+              data-wow-delay=".2s"
+            >
+              Ask about Sans products, pricing, implementation, or anything
+              else. Our highly trained reps are standing by, ready to help
+            </p>
+          </div>
+          <button class="btn footer__btn footer__btn--dark wow fadeInRight">
+            Try for free
+          </button>
         </div>
+        <div class="footer__bottom">
+          <div class="footer__descr">
+            <img
+              src="images/logo-light.svg"
+              alt=""
+              class="logo wow fadeInLeft"
+              data-wow-delay=".5s"
+            />
+            <p
+              class="footer__text footer__text--dark wow fadeInLeft"
+              data-wow-delay="1s"
+            >
+              We built an elegant solution. Our team created a fully integrated
+              sales and marketing solution for SMBs
+            </p>
+          </div>
+          <div class="footer__links footer__links-desktop">
+            <ul class="footer__list wow fadeInRight">
+              <li class="footer__item footer__item-title">Company</li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">About</a>
+              </li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">Pricing</a>
+              </li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">Jobs</a>
+              </li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+            <ul class="footer__list wow fadeInRight" data-wow-delay=".2s">
+              <li class="footer__item footer__item-title">Product</li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">Discover</a>
+              </li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">Sales Software</a>
+              </li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">CRM Comparision</a>
+              </li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">Marketplace</a>
+              </li>
+            </ul>
+            <ul class="footer__list wow fadeInRight" data-wow-delay=".4s">
+              <li class="footer__item footer__item-title">Partner Program</li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">Terms & Conditions</a>
+              </li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">What is CRM</a>
+              </li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">Resource</a>
+              </li>
+            </ul>
+            <ul class="footer__list wow fadeInRight" data-wow-delay=".6s">
+              <li class="footer__item footer__item-title">Help Center</li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">Community</a>
+              </li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">Knowledge Base</a>
+              </li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">Academy</a>
+              </li>
+              <li class="footer__item footer__item--dark">
+                <a href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__dark">
+          <ul class="footer__socials">
+            <li class="wow fadeInRight">
+              <a href="#">
+                <img
+                  src="images/socials/facebook-dark.svg"
+                  alt=""
+                  class="footer__img"
+                />
+              </a>
+            </li>
+            <li class="wow fadeInRight" data-wow-delay=".1s">
+              <a href="#">
+                <img
+                  src="images/socials/twitter-dark.svg"
+                  alt=""
+                  class="footer__img"
+                />
+              </a>
+            </li>
+            <li class="wow fadeInRight" data-wow-delay=".2s">
+              <a href="#">
+                <img
+                  src="images/socials/insta-dark.svg"
+                  alt=""
+                  class="footer__img"
+                />
+              </a>
+            </li>
+            <li class="wow fadeInRight" data-wow-delay=".3s">
+              <a href="#">
+                <img
+                  src="images/socials/linkedin-dark.svg"
+                  alt=""
+                  class="footer__img"
+                />
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__info">
+            <li class="wow fadeInUp" data-wow-delay=".4s">
+              <a href="#" class="footer__link">Privacy Policy</a>
+            </li>
+            <li class="wow fadeInUp" data-wow-delay=".4s">
+              <a href="#" class="footer__link">Terms & Conditions</a>
+            </li>
+            <li class="wow fadeInUp" data-wow-delay=".4s">
+              <a href="#" class="footer__link">Support</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
-    <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
-        <symbol id="arrow" viewBox="0 0 18 18">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.26341 2.9638C9.61488 2.61233 10.1847 2.61233 10.5362 2.9638L15.9362 8.3638C16.2877 8.71527 16.2877 9.28512 15.9362 9.63659L10.5362 15.0366C10.1847 15.3881 9.61488 15.3881 9.26341 15.0366C8.91194 14.6851 8.91194 14.1153 9.26341 13.7638L13.127 9.9002L2.69981 9.9002C2.20275 9.9002 1.7998 9.49725 1.7998 9.0002C1.7998 8.50314 2.20275 8.1002 2.69981 8.1002H13.127L9.26341 4.23659C8.91194 3.88512 8.91194 3.31527 9.26341 2.9638Z"/>
-        </symbol>
-        <symbol id="progress-arrow" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7071 12.7071C14.3166 13.0976 13.6834 13.0976 13.2929 12.7071L10 9.41421L6.70711 12.7071C6.31658 13.0976 5.68342 13.0976 5.29289 12.7071C4.90237 12.3166 4.90237 11.6834 5.29289 11.2929L9.29289 7.29289C9.68342 6.90237 10.3166 6.90237 10.7071 7.29289L14.7071 11.2929C15.0976 11.6834 15.0976 12.3166 14.7071 12.7071Z"/>
-        </symbol>
-        <symbol id="dot" viewBox="0 0 3 3">
-            <circle cx="1.5" cy="1.5" r="1.5" fill="#161A34"/>
-        </symbol>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="arrow" viewBox="0 0 18 18">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M9.26341 2.9638C9.61488 2.61233 10.1847 2.61233 10.5362 2.9638L15.9362 8.3638C16.2877 8.71527 16.2877 9.28512 15.9362 9.63659L10.5362 15.0366C10.1847 15.3881 9.61488 15.3881 9.26341 15.0366C8.91194 14.6851 8.91194 14.1153 9.26341 13.7638L13.127 9.9002L2.69981 9.9002C2.20275 9.9002 1.7998 9.49725 1.7998 9.0002C1.7998 8.50314 2.20275 8.1002 2.69981 8.1002H13.127L9.26341 4.23659C8.91194 3.88512 8.91194 3.31527 9.26341 2.9638Z"
+        />
+      </symbol>
+      <symbol id="progress-arrow" viewBox="0 0 20 20">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M14.7071 12.7071C14.3166 13.0976 13.6834 13.0976 13.2929 12.7071L10 9.41421L6.70711 12.7071C6.31658 13.0976 5.68342 13.0976 5.29289 12.7071C4.90237 12.3166 4.90237 11.6834 5.29289 11.2929L9.29289 7.29289C9.68342 6.90237 10.3166 6.90237 10.7071 7.29289L14.7071 11.2929C15.0976 11.6834 15.0976 12.3166 14.7071 12.7071Z"
+        />
+      </symbol>
+      <symbol id="dot" viewBox="0 0 3 3">
+        <circle cx="1.5" cy="1.5" r="1.5" fill="#161A34" />
+      </symbol>
     </svg>
 
     <script src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

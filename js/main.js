@@ -61,3 +61,10 @@ if (width > 690) {
         variableWidth: true,
     });
 }
+
+$(".team__slider").slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    variableWidth: true,
+  });
