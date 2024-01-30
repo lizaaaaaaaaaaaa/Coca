@@ -1644,6 +1644,10 @@ footer {
     .get-it {
         padding: 75px 0 105px;
     }
+
+    .team__text {
+        padding: 20px 0 60px;
+    }
 }
 
 @media (max-width: 775px) {
@@ -1985,6 +1989,10 @@ footer {
     .quote__text {
         max-width: 100%;
     }
+
+    .team__text {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -2072,6 +2080,10 @@ footer {
     .quote__inner {
         padding-top: 48px;
         padding-bottom: 48px;
+    }
+
+    .team__text {
+        padding-bottom: 50px;
     }
 }
 
@@ -2314,6 +2326,44 @@ footer {
     .quote__inner {
         padding-top: 42px;
         padding-bottom: 42px;
+    }
+
+    .team__item {
+        max-width: 247px;
+    }
+
+    .team__worker {
+        width: 100%;
+        max-height: 244px;
+        object-fit: cover;
+        object-position: 0 0;
+    }
+
+    .team__name {
+        font-size: 16px;
+    }
+
+    .team__job {
+        font-size: 14px;
+    }
+
+    .team__img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .team__slider .slick-track {
+        gap: 0 16px;
+    }
+
+    .team__slider .slick-track {
+        gap: 0 16px;
+    }
+
+    .team__text {
+        font-size: 14px;
+        padding-top: 16px;
+        padding-bottom: 40px;
     }
 }
 
@@ -2598,6 +2648,15 @@ footer {
 
     .get-it__text {
         padding-left: 32px;
+    }
+
+    .team__img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .team__text {
+        padding-bottom: 32px;
     }
 }
 
