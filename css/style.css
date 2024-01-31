@@ -1391,6 +1391,28 @@ footer {
     transition: transform .2s;
 }
 
+.join-us__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 50px;
+    align-items: center;
+}
+.join-us__content {
+    max-width: 506px;
+}
+
+.join-us__text {
+    color: #7E8492;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 24px;
+}
+
+.join-us__link {
+    font-weight: 600;
+    line-height: 24px;
+}
+
 
 
 
