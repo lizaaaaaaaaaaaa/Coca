@@ -1,589 +1,924 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <title>Coca</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container header__inner">
-            <a href="index.html">
-                <img src="images/logo.svg" alt="" class="logo wow fadeInLeft">
-            </a>
-            <div class="header__links">
-                <nav class="nav" data-wow-delay="0.5s">
-                    <a href="#" class="nav__item">Home</a>
-                    <a href="about.html" class="nav__item">About</a>
-                    <a href="#" class="nav__item">Blog</a>
-                    <a href="#" class="nav__item">Pricing</a>
-                </nav>
-                <button class="header__btn" data-wow-delay="1s">
-                    <span>Contact Us</span>
-                    <svg class="header__arrow">
-                        <use xlink:href="#arrow"></use>
-                    </svg>
-                </button>
-            </div>
-            <button class="burger wow fadeInRight" data-wow-delay=".2s">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+      <div class="container header__inner">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="" class="logo wow fadeInLeft" />
+        </a>
+        <div class="header__links">
+          <nav class="nav" data-wow-delay="0.5s">
+            <a href="#" class="nav__item">Home</a>
+            <a href="about.html" class="nav__item">About</a>
+            <a href="#" class="nav__item">Blog</a>
+            <a href="#" class="nav__item">Pricing</a>
+          </nav>
+          <a href="contact.html" class="header__btn" data-wow-delay="1s">
+            <span>Contact Us</span>
+            <svg class="header__arrow">
+              <use xlink:href="#arrow"></use>
+            </svg>
+          </a>
         </div>
+        <button class="burger wow fadeInRight" data-wow-delay=".2s">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
     <main class="main">
-        <section class="intro">
-            <div class="container intro__inner">
-                <div class="intro__content">
-                    <h1 class="title--main intro__title wow fadeInLeft">Digitally forward creative</h1>
-                    <p class="text intro__text wow fadeInLeft" data-wow-delay=".3s">When it comes to interactive marketing, we've got you covered. Be where the world is going</p>
-                    <form action="" class="intro__form">
-                        <input type="email" class="intro__input wow fadeInUp" placeholder="Enter your email" data-wow-delay=".6s">
-                        <button class="btn intro__btn wow fadeInUp" type="submit" data-wow-delay=".8s">Try for free</button>
-                    </form>
-                </div>
-                <div class="intro__stat">
-                    <img src="images/intro/intro-sales.png" alt="" class="intro__sales wow fadeInRight" data-wow-delay=".2s">
-                    <img src="images/intro/intro-growth.png" alt="" class="intro__growth wow fadeInRight" data-wow-delay=".7s">
-                    <ul class="intro__list wow fadeInUp" >
-                        <li class="intro__item">
-                            <h6 class="intro__name wow fadeInUp" data-wow-delay=".4s">Sales</h6>
-                            <h4 class="intro__price wow fadeInUp" data-wow-delay=".6s">$31,092</h4>
-                            <p class="intro__profit wow fadeInUp" data-wow-delay=".8s">
-                                <span class="intro__inc">
-                                    <svg class="intro__arrow intro__arrow-inc">
-                                        <use xlink:href="#arrow"></use>
-                                    </svg>
-                                    4.2%
-                                </span>
-                                <span>from last year</span>
-                            </p>
-                        </li>
-                        <li class="intro__item">
-                            <h6 class="intro__name wow fadeInUp" data-wow-delay=".4s">Marketing</h6>
-                            <h4 class="intro__price wow fadeInUp" data-wow-delay=".6s">$29,128</h4>
-                            <p class="intro__profit wow fadeInUp" data-wow-delay=".8s">
-                                <span class="intro__dec">
-                                    <svg class="intro__arrow intro__arrow-dec">
-                                        <use xlink:href="#arrow"></use>
-                                    </svg>
-                                    1.2%
-                                </span>
-                                <span>from last year</span>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <img src="images/intro/intro-ellipse-orange.png" alt="" class="intro__circle-orange">
-                <img src="images/intro/intro-ellipse-green.png" alt="" class="intro__circle-green">
-            </div>
-        </section>
-
-        <section class="overview">
-            <div class="container">
-                <h1 class="title title-white wow fadeInLeft">
-                    Coca help our client solve complex customer problems with date that does more.
-                </h1>
-                <p class="overview__text wow fadeInLeft" data-wow-delay=".3s">
-                    Our platform offers the modern enterprise full control of how date can be access and used with industry leading software solutions for identity, activation, and date collaboration
+      <section class="intro">
+        <div class="container intro__inner">
+          <div class="intro__content">
+            <h1 class="title--main intro__title wow fadeInLeft">
+              Digitally forward creative
+            </h1>
+            <p class="text intro__text wow fadeInLeft" data-wow-delay=".3s">
+              When it comes to interactive marketing, we've got you covered. Be
+              where the world is going
+            </p>
+            <form action="" class="intro__form">
+              <input
+                type="email"
+                class="intro__input wow fadeInUp"
+                placeholder="Enter your email"
+                data-wow-delay=".6s"
+              />
+              <button
+                class="btn intro__btn wow fadeInUp"
+                type="submit"
+                data-wow-delay=".8s"
+              >
+                Try for free
+              </button>
+            </form>
+          </div>
+          <div class="intro__stat">
+            <img
+              src="images/intro/intro-sales.png"
+              alt=""
+              class="intro__sales wow fadeInRight"
+              data-wow-delay=".2s"
+            />
+            <img
+              src="images/intro/intro-growth.png"
+              alt=""
+              class="intro__growth wow fadeInRight"
+              data-wow-delay=".7s"
+            />
+            <ul class="intro__list wow fadeInUp">
+              <li class="intro__item">
+                <h6 class="intro__name wow fadeInUp" data-wow-delay=".4s">
+                  Sales
+                </h6>
+                <h4 class="intro__price wow fadeInUp" data-wow-delay=".6s">
+                  $31,092
+                </h4>
+                <p class="intro__profit wow fadeInUp" data-wow-delay=".8s">
+                  <span class="intro__inc">
+                    <svg class="intro__arrow intro__arrow-inc">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                    4.2%
+                  </span>
+                  <span>from last year</span>
                 </p>
-                <div class="overview__inner">
-                    <div class="overview__item wow fadeInUp" data-wow-delay=".5s">
-                        <img src="images/icons/calendar.svg" alt="" class="overview__img">
-                        <h3 class="overview__title">
-                            Build your date fundamental
-                        </h3>
-                        <p class="overview__descr">
-                            Build access to date, develop valuable business insights and drive revenue while maintaining full control over access and use of date at all times.
-                        </p>
-                    </div>
-                    <div class="overview__item wow fadeInUp" data-wow-delay=".6s">
-                        <img src="images/icons/completed.svg" alt="" class="overview__img">
-                        <h3 class="overview__title">
-                            Measure more effective
-                        </h3>
-                        <p class="overview__descr">
-                            Effectively measure people-based campaigns with the freedom to choose from best-of breed partners to optimize and drive media innovation.
-                        </p>
-                    </div>
-                    <div class="overview__item wow fadeInUp" data-wow-delay=".7s">
-                        <img src="images/icons/list.svg" alt="" class="overview__img">
-                        <h3 class="overview__title">
-                            Activate your date
-                        </h3>
-                        <p class="overview__descr">
-                            Accurately address your specific audiences at scale across any channel, platform, publisher or network and safely translate date between identity space to improve results.
-                        </p>
-                    </div>
-                    <div class="overview__item wow fadeInUp" data-wow-delay=".8s">
-                        <img src="images/icons/shield.svg" alt="" class="overview__img">
-                        <h3 class="overview__title">
-                            Strengthen consumer privacy
-                        </h3>
-                        <p class="overview__descr">
-                            Protect your customer date with leading privacy-preserving technologies and advanced techniques to minimize date movement while still enabling insight generation.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+              </li>
+              <li class="intro__item">
+                <h6 class="intro__name wow fadeInUp" data-wow-delay=".4s">
+                  Marketing
+                </h6>
+                <h4 class="intro__price wow fadeInUp" data-wow-delay=".6s">
+                  $29,128
+                </h4>
+                <p class="intro__profit wow fadeInUp" data-wow-delay=".8s">
+                  <span class="intro__dec">
+                    <svg class="intro__arrow intro__arrow-dec">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                    1.2%
+                  </span>
+                  <span>from last year</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <img
+            src="images/intro/intro-ellipse-orange.png"
+            alt=""
+            class="intro__circle-orange"
+          />
+          <img
+            src="images/intro/intro-ellipse-green.png"
+            alt=""
+            class="intro__circle-green"
+          />
+        </div>
+      </section>
 
-        <section class="features">
-            <div class="container features__inner">
-                <div class="features__stat wow fadeInLeft" style="background-image: url('images/features/back.jpg');">
-                    <div class="features__info wow fadeInUp" data-wow-delay=".5s">
-                        <div class="features__top">
-                            <div class="features__title">Statictic</div>
-                            <img src="images/features/menu.svg" alt="" class="features__btn">
-                        </div>
-                        <ul class="features__list">
-                            <li class="features__item">
-                                <img src="images/features/income.svg" alt="" class="features__img">
-                                <div class="features__descr">
-                                    <h6 class="features__name">Total Income</h6>
-                                    <div class="features__progress">
-                                        <h3 class="features__cost">$7.020</h3>
-                                        <div class="features__score">
-                                            <svg class="features__arrow features__arrow-up">
-                                                <use xlink:href="#progress-arrow"></use>
-                                            </svg>
-                                            <div class="features__number">15%</div>
-                                        </div>
-                                    </div>
-                                    <p class="features__add">
-                                        Your <span>Income</span> of this month compared to last month
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="features__item">
-                                <img src="images/features/expense.svg" alt="" class="features__img">
-                                <div class="features__descr">
-                                    <h6 class="features__name">Total Expense</h6>
-                                    <div class="features__progress">
-                                        <h3 class="features__cost">$2.150</h3>
-                                        <div class="features__score">
-                                            <svg class="features__arrow features__arrow-down">
-                                                <use xlink:href="#progress-arrow"></use>
-                                            </svg>
-                                            <div class="features__number">10%</div>
-                                        </div>
-                                    </div>
-                                    <p class="features__add">
-                                        Your <span>Expanse</span> of this month compared to last month
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="features__content">
-                    <h1 class="title wow fadeInRight" data-wow-delay=".2s">
-                        Passion to increase company revenue up to 85%
-                    </h1>
-                    <h5 class="features__subtitle wow fadeInRight" data-wow-delay=".4s">
-                        Automate your sales, marketing and service in one platform. Avoid date leaks and enable consistent messaging
-                    </h5>
-                    <ul class="features__preferences wow fadeInUp" data-wow-delay=".6s">
-                        <li>
-                            <img src="images/features/checked.svg" alt="" class="features__checked">
-                            Close more deals with single - page contact managment
-                        </li>
-                        <li>
-                            <img src="images/features/checked.svg" alt="" class="features__checked">
-                            Enjoy one-click calling, call scripts and voicemail automation
-                        </li>
-                        <li>
-                            <img src="images/features/checked.svg" alt="" class="features__checked">
-                            Take stages and milestones of your deals to keep the sales process an track
-                        </li>
-                    </ul>
-                </div>
+      <section class="overview">
+        <div class="container">
+          <h1 class="title title-white wow fadeInLeft">
+            Coca help our client solve complex customer problems with date that
+            does more.
+          </h1>
+          <p class="overview__text wow fadeInLeft" data-wow-delay=".3s">
+            Our platform offers the modern enterprise full control of how date
+            can be access and used with industry leading software solutions for
+            identity, activation, and date collaboration
+          </p>
+          <div class="overview__inner">
+            <div class="overview__item wow fadeInUp" data-wow-delay=".5s">
+              <img
+                src="images/icons/calendar.svg"
+                alt=""
+                class="overview__img"
+              />
+              <h3 class="overview__title">Build your date fundamental</h3>
+              <p class="overview__descr">
+                Build access to date, develop valuable business insights and
+                drive revenue while maintaining full control over access and use
+                of date at all times.
+              </p>
             </div>
-        </section>
+            <div class="overview__item wow fadeInUp" data-wow-delay=".6s">
+              <img
+                src="images/icons/completed.svg"
+                alt=""
+                class="overview__img"
+              />
+              <h3 class="overview__title">Measure more effective</h3>
+              <p class="overview__descr">
+                Effectively measure people-based campaigns with the freedom to
+                choose from best-of breed partners to optimize and drive media
+                innovation.
+              </p>
+            </div>
+            <div class="overview__item wow fadeInUp" data-wow-delay=".7s">
+              <img src="images/icons/list.svg" alt="" class="overview__img" />
+              <h3 class="overview__title">Activate your date</h3>
+              <p class="overview__descr">
+                Accurately address your specific audiences at scale across any
+                channel, platform, publisher or network and safely translate
+                date between identity space to improve results.
+              </p>
+            </div>
+            <div class="overview__item wow fadeInUp" data-wow-delay=".8s">
+              <img src="images/icons/shield.svg" alt="" class="overview__img" />
+              <h3 class="overview__title">Strengthen consumer privacy</h3>
+              <p class="overview__descr">
+                Protect your customer date with leading privacy-preserving
+                technologies and advanced techniques to minimize date movement
+                while still enabling insight generation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="strength section">
-            <div class="container">
-                <ul class="strength__list wow fadeInUp">
-                    <li class="strength__item">
-                        <h2 class="strength__number">17k</h2>
-                        <p class="strength__add">
-                            happy customers on worldwide
-                        </p>
-                    </li>
-                    <li class="strength__item">
-                        <h2 class="strength__number">15+</h2>
-                        <p class="strength__add">
-                            Hours of work experience
-                        </p>
-                    </li>
-                    <li class="strength__item">
-                        <h2 class="strength__number">50+</h2>
-                        <p class="strength__add">
-                            Creativity & passionate members
-                        </p>
-                    </li>
-                    <li class="strength__item">
-                        <h2 class="strength__number">100+</h2>
-                        <p class="strength__add">
-                            Integrations lorem ipsum integrations
-                        </p>
-                    </li>
-                </ul>
-                <img src="images/strength/strength.jpg" alt="" class="strength__img wow fadeInUp" data-wow-delay="0.1s">
-                <div class="strength__descr">
-                    <h1 class="title wow fadeInLeft">
-                        Lift your business to new heights with our digital marketing services
-                    </h1>
-                    <p class="strength__text wow fadeInRight" data-wow-delay=".2s">
-                        To build software that gives customer facing teams in small and medium-sized businesses the ability to create rewarding and long-lasting relationships with customers
+      <section class="features">
+        <div class="container features__inner">
+          <div
+            class="features__stat wow fadeInLeft"
+            style="background-image: url('images/features/back.jpg')"
+          >
+            <div class="features__info wow fadeInUp" data-wow-delay=".5s">
+              <div class="features__top">
+                <div class="features__title">Statictic</div>
+                <img
+                  src="images/features/menu.svg"
+                  alt=""
+                  class="features__btn"
+                />
+              </div>
+              <ul class="features__list">
+                <li class="features__item">
+                  <img
+                    src="images/features/income.svg"
+                    alt=""
+                    class="features__img"
+                  />
+                  <div class="features__descr">
+                    <h6 class="features__name">Total Income</h6>
+                    <div class="features__progress">
+                      <h3 class="features__cost">$7.020</h3>
+                      <div class="features__score">
+                        <svg class="features__arrow features__arrow-up">
+                          <use xlink:href="#progress-arrow"></use>
+                        </svg>
+                        <div class="features__number">15%</div>
+                      </div>
+                    </div>
+                    <p class="features__add">
+                      Your <span>Income</span> of this month compared to last
+                      month
                     </p>
-                </div>
-                <div class="strength__companies">
-                    <div class="strength__stat">
-                        <h2 class="strength__number wow fadeInLeft">890+</h2>
-                        <p class="strength__add strength__add-last wow fadeInLeft" data-wow-delay=".2s">
-                            some big companies that we work with, and trust us very much
-                        </p>
+                  </div>
+                </li>
+                <li class="features__item">
+                  <img
+                    src="images/features/expense.svg"
+                    alt=""
+                    class="features__img"
+                  />
+                  <div class="features__descr">
+                    <h6 class="features__name">Total Expense</h6>
+                    <div class="features__progress">
+                      <h3 class="features__cost">$2.150</h3>
+                      <div class="features__score">
+                        <svg class="features__arrow features__arrow-down">
+                          <use xlink:href="#progress-arrow"></use>
+                        </svg>
+                        <div class="features__number">10%</div>
+                      </div>
                     </div>
-                    <div class="strength__logos wow fadeInUp" data-wow-delay=".4s">
-                        <img src="images/strength/companies/airbnb.svg" alt="" class="strength__logo">
-                        <img src="images/strength/companies/amazon.svg" alt="" class="strength__logo">
-                        <img src="images/strength/companies/fedex.svg" alt="" class="strength__logo">
-                        <img src="images/strength/companies/microsoft.svg" alt="" class="strength__logo">
-                        <img src="images/strength/companies/google.svg" alt="" class="strength__logo">
-                        <img src="images/strength/companies/ola.svg" alt="" class="strength__logo">
-                        <img src="images/strength/companies/walmart.svg" alt="" class="strength__logo">
-                        <img src="images/strength/companies/oyo.svg" alt="" class="strength__logo">
-                    </div>
-                </div>
+                    <p class="features__add">
+                      Your <span>Expanse</span> of this month compared to last
+                      month
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
+          <div class="features__content">
+            <h1 class="title wow fadeInRight" data-wow-delay=".2s">
+              Passion to increase company revenue up to 85%
+            </h1>
+            <h5 class="features__subtitle wow fadeInRight" data-wow-delay=".4s">
+              Automate your sales, marketing and service in one platform. Avoid
+              date leaks and enable consistent messaging
+            </h5>
+            <ul class="features__preferences wow fadeInUp" data-wow-delay=".6s">
+              <li>
+                <img
+                  src="images/features/checked.svg"
+                  alt=""
+                  class="features__checked"
+                />
+                Close more deals with single - page contact managment
+              </li>
+              <li>
+                <img
+                  src="images/features/checked.svg"
+                  alt=""
+                  class="features__checked"
+                />
+                Enjoy one-click calling, call scripts and voicemail automation
+              </li>
+              <li>
+                <img
+                  src="images/features/checked.svg"
+                  alt=""
+                  class="features__checked"
+                />
+                Take stages and milestones of your deals to keep the sales
+                process an track
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <section class="services section">
-            <div class="container">
-                <h1 class="title title-narrow wow fadeInLeft">
-                    Advertise, analyze, and optimize! We do it all for you
-                </h1>
-                <p class="sevices__text wow fadeInLeft" data-wow-delay=".2s">
-                    Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster
+      <section class="strength section">
+        <div class="container">
+          <ul class="strength__list wow fadeInUp">
+            <li class="strength__item">
+              <h2 class="strength__number">17k</h2>
+              <p class="strength__add">happy customers on worldwide</p>
+            </li>
+            <li class="strength__item">
+              <h2 class="strength__number">15+</h2>
+              <p class="strength__add">Hours of work experience</p>
+            </li>
+            <li class="strength__item">
+              <h2 class="strength__number">50+</h2>
+              <p class="strength__add">Creativity & passionate members</p>
+            </li>
+            <li class="strength__item">
+              <h2 class="strength__number">100+</h2>
+              <p class="strength__add">Integrations lorem ipsum integrations</p>
+            </li>
+          </ul>
+          <img
+            src="images/strength/strength.jpg"
+            alt=""
+            class="strength__img wow fadeInUp"
+            data-wow-delay="0.1s"
+          />
+          <div class="strength__descr">
+            <h1 class="title wow fadeInLeft">
+              Lift your business to new heights with our digital marketing
+              services
+            </h1>
+            <p class="strength__text wow fadeInRight" data-wow-delay=".2s">
+              To build software that gives customer facing teams in small and
+              medium-sized businesses the ability to create rewarding and
+              long-lasting relationships with customers
+            </p>
+          </div>
+          <div class="strength__companies">
+            <div class="strength__stat">
+              <h2 class="strength__number wow fadeInLeft">890+</h2>
+              <p
+                class="strength__add strength__add-last wow fadeInLeft"
+                data-wow-delay=".2s"
+              >
+                some big companies that we work with, and trust us very much
+              </p>
+            </div>
+            <div class="strength__logos wow fadeInUp" data-wow-delay=".4s">
+              <img
+                src="images/strength/companies/airbnb.svg"
+                alt=""
+                class="strength__logo"
+              />
+              <img
+                src="images/strength/companies/amazon.svg"
+                alt=""
+                class="strength__logo"
+              />
+              <img
+                src="images/strength/companies/fedex.svg"
+                alt=""
+                class="strength__logo"
+              />
+              <img
+                src="images/strength/companies/microsoft.svg"
+                alt=""
+                class="strength__logo"
+              />
+              <img
+                src="images/strength/companies/google.svg"
+                alt=""
+                class="strength__logo"
+              />
+              <img
+                src="images/strength/companies/ola.svg"
+                alt=""
+                class="strength__logo"
+              />
+              <img
+                src="images/strength/companies/walmart.svg"
+                alt=""
+                class="strength__logo"
+              />
+              <img
+                src="images/strength/companies/oyo.svg"
+                alt=""
+                class="strength__logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section">
+        <div class="container">
+          <h1 class="title title-narrow wow fadeInLeft">
+            Advertise, analyze, and optimize! We do it all for you
+          </h1>
+          <p class="sevices__text wow fadeInLeft" data-wow-delay=".2s">
+            Build more meaningful and lasting relationships - better understand
+            their needs, identify new opportunities to help address any problems
+            faster
+          </p>
+          <div class="services__inner">
+            <div class="services__item wow fadeInRight" data-wow-delay=".3s">
+              <div
+                class="services__images"
+                style="background-image: url('images/services/services-1.jpg')"
+              >
+                <img
+                  src="images/services/icon/smile.svg"
+                  alt=""
+                  class="services__icon"
+                />
+              </div>
+              <div class="services__content">
+                <div class="services__name">Lead happiness for customers</div>
+                <div class="services__descr">
+                  Build more meaningful and lasting relationships - better
+                  understand their needs, identify new opportunities to help
+                  address any problems faster
+                </div>
+              </div>
+            </div>
+            <div class="services__item wow fadeInRight" data-wow-delay=".4s">
+              <div
+                class="services__images"
+                style="background-image: url('images/services/services-2.jpg')"
+              >
+                <img
+                  src="images/services/icon/increase.svg"
+                  alt=""
+                  class="services__icon"
+                />
+              </div>
+              <div class="services__content">
+                <div class="services__name">Mutually support each other</div>
+                <div class="services__descr">
+                  Build more meaningful and lasting relationships - better
+                  understand their needs, identify new opportunities to help
+                  address any problems faster
+                </div>
+              </div>
+            </div>
+            <div class="services__item wow fadeInRight" data-wow-delay=".5s">
+              <div
+                class="services__images"
+                style="background-image: url('images/services/services-3.jpg')"
+              >
+                <img
+                  src="images/services/icon/group.svg"
+                  alt=""
+                  class="services__icon"
+                />
+              </div>
+              <div class="services__content">
+                <div class="services__name">Have fun growing together</div>
+                <div class="services__descr">
+                  Build more meaningful and lasting relationships - better
+                  understand their needs, identify new opportunities to help
+                  address any problems faster
+                </div>
+              </div>
+            </div>
+            <div class="services__item wow fadeInRight" data-wow-delay=".6s">
+              <div
+                class="services__images"
+                style="background-image: url('images/services/services-4.jpg')"
+              >
+                <img
+                  src="images/services/icon/board.svg"
+                  alt=""
+                  class="services__icon"
+                />
+              </div>
+              <div class="services__content">
+                <div class="services__name">Make Your Business Grow</div>
+                <div class="services__descr">
+                  Build more meaningful and lasting relationships - better
+                  understand their needs, identify new opportunities to help
+                  address any problems faster
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="insight section">
+        <div class="container">
+          <h1 class="insight__title wow fadeInUp">Trending news from Coca</h1>
+          <h6 class="insight__subtitle wow fadeInUp" data-wow-delay=".4s">
+            we have some new Service to pamper you
+          </h6>
+          <div class="insight__slider wow fadeInUp" data-wow-delay=".6s">
+            <div class="insight__item">
+              <img
+                src="images/insight/insight-1.jpg"
+                alt=""
+                class="insight__img"
+              />
+              <div class="insight__info">
+                <p class="insight__published">
+                  Published in Insight Jan 30, 2021
                 </p>
-                <div class="services__inner">
-                    <div class="services__item wow fadeInRight" data-wow-delay=".3s">
-                        <div class="services__images" style="background-image: url('images/services/services-1.jpg');">
-                            <img src="images/services/icon/smile.svg" alt="" class="services__icon">
-                        </div>
-                        <div class="services__content">
-                            <div class="services__name">
-                                Lead happiness for customers
-                            </div>
-                            <div class="services__descr">
-                                Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services__item wow fadeInRight" data-wow-delay=".4s">
-                        <div class="services__images" style="background-image: url('images/services/services-2.jpg');">
-                            <img src="images/services/icon/increase.svg" alt="" class="services__icon">
-                        </div>
-                        <div class="services__content">
-                            <div class="services__name">
-                                Mutually support each other
-                            </div>
-                            <div class="services__descr">
-                                Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services__item wow fadeInRight" data-wow-delay=".5s">
-                        <div class="services__images" style="background-image: url('images/services/services-3.jpg');">
-                            <img src="images/services/icon/group.svg" alt="" class="services__icon">
-                        </div>
-                        <div class="services__content">
-                            <div class="services__name">
-                                Have fun growing together
-                            </div>
-                            <div class="services__descr">
-                                Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services__item wow fadeInRight" data-wow-delay=".6s">
-                        <div class="services__images" style="background-image: url('images/services/services-4.jpg');">
-                            <img src="images/services/icon/board.svg" alt="" class="services__icon">
-                        </div>
-                        <div class="services__content">
-                            <div class="services__name">
-                                Make Your Business Grow
-                            </div>
-                            <div class="services__descr">
-                                Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <p class="insight__by">by : Albert Sans</p>
+              </div>
+              <h3 class="insight__name">
+                What makes an authentic employee profile, and why does it matter
+                ?
+              </h3>
             </div>
-        </section>
+            <div class="insight__item">
+              <img
+                src="images/insight/insight-2.jpg"
+                alt=""
+                class="insight__img"
+              />
+              <div class="insight__info">
+                <p class="insight__published">
+                  Published in Insight Jan 30, 2021
+                </p>
+                <p class="insight__by">by : Albert Sans</p>
+              </div>
+              <h3 class="insight__name">
+                How to build a Kaylen relationship with a good company
+              </h3>
+            </div>
+            <div class="insight__item">
+              <img
+                src="images/insight/insight-1.jpg"
+                alt=""
+                class="insight__img"
+              />
+              <div class="insight__info">
+                <p class="insight__published">
+                  Published in Insight Jan 30, 2021
+                </p>
+                <p class="insight__by">by : Albert Sans</p>
+              </div>
+              <h3 class="insight__name">
+                What makes an authentic employee profile, and why does it matter
+                ?
+              </h3>
+            </div>
+            <div class="insight__item">
+              <img
+                src="images/insight/insight-2.jpg"
+                alt=""
+                class="insight__img"
+              />
+              <div class="insight__info">
+                <p class="insight__published">
+                  Published in Insight Jan 30, 2021
+                </p>
+                <p class="insight__by">by : Albert Sans</p>
+              </div>
+              <h3 class="insight__name">
+                How to build a Kaylen relationship with a good company
+              </h3>
+            </div>
+            <div class="insight__item">
+              <img
+                src="images/insight/insight-1.jpg"
+                alt=""
+                class="insight__img"
+              />
+              <div class="insight__info">
+                <p class="insight__published">
+                  Published in Insight Jan 30, 2021
+                </p>
+                <p class="insight__by">by : Albert Sans</p>
+              </div>
+              <h3 class="insight__name">
+                What makes an authentic employee profile, and why does it matter
+                ?
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="insight section">
-            <div class="container">
-                <h1 class="insight__title wow fadeInUp">Trending news from Coca</h1>
-                <h6 class="insight__subtitle wow fadeInUp" data-wow-delay=".4s">we have some new Service to pamper you</h6>
-                <div class="insight__slider wow fadeInUp" data-wow-delay=".6s">
-                    <div class="insight__item">
-                        <img src="images/insight/insight-1.jpg" alt="" class="insight__img">
-                        <div class="insight__info">
-                            <p class="insight__published">Published in Insight Jan 30, 2021</p>
-                            <p class="insight__by">by : Albert Sans</p>
-                        </div>
-                        <h3 class="insight__name">What makes an authentic employee profile, and why does it matter ?</h3>
-                    </div>
-                    <div class="insight__item">
-                        <img src="images/insight/insight-2.jpg" alt="" class="insight__img">
-                        <div class="insight__info">
-                            <p class="insight__published">Published in Insight Jan 30, 2021</p>
-                            <p class="insight__by">by : Albert Sans</p>
-                        </div>
-                        <h3 class="insight__name">How to build a Kaylen relationship with a good company</h3>
-                    </div>
-                    <div class="insight__item">
-                        <img src="images/insight/insight-1.jpg" alt="" class="insight__img">
-                        <div class="insight__info">
-                            <p class="insight__published">Published in Insight Jan 30, 2021</p>
-                            <p class="insight__by">by : Albert Sans</p>
-                        </div>
-                        <h3 class="insight__name">What makes an authentic employee profile, and why does it matter ?</h3>
-                    </div>
-                    <div class="insight__item">
-                        <img src="images/insight/insight-2.jpg" alt="" class="insight__img">
-                        <div class="insight__info">
-                            <p class="insight__published">Published in Insight Jan 30, 2021</p>
-                            <p class="insight__by">by : Albert Sans</p>
-                        </div>
-                        <h3 class="insight__name">How to build a Kaylen relationship with a good company</h3>
-                    </div>
-                    <div class="insight__item">
-                        <img src="images/insight/insight-1.jpg" alt="" class="insight__img">
-                        <div class="insight__info">
-                            <p class="insight__published">Published in Insight Jan 30, 2021</p>
-                            <p class="insight__by">by : Albert Sans</p>
-                        </div>
-                        <h3 class="insight__name">What makes an authentic employee profile, and why does it matter ?</h3>
-                    </div>
+      <section class="testim section">
+        <div class="container">
+          <div class="testim__top">
+            <h1 class="title testim__title wow fadeInUp">
+              What our customer are saying
+            </h1>
+            <p class="testim__text wow fadeInUp" data-wow-delay=".3s">
+              We are trusted numerous companies from different business to meet
+              their needs
+            </p>
+          </div>
+          <div class="testim__inner">
+            <img
+              src="images/testimonial/icons/quotes.svg"
+              alt=""
+              class="testim__img wow fadeInLeft"
+            />
+            <div class="testim__slider wow fadeInUp">
+              <div class="testim__item">
+                <div class="testim__rate">
+                  <img
+                    src="images/testimonial/icons/star.svg"
+                    alt=""
+                    class="testim__star wow fadeInLeft"
+                    data-wow-delay=".1s"
+                  />
+                  <img
+                    src="images/testimonial/icons/star.svg"
+                    alt=""
+                    class="testim__star wow fadeInLeft"
+                    data-wow-delay=".2s"
+                  />
+                  <img
+                    src="images/testimonial/icons/star.svg"
+                    alt=""
+                    class="testim__star wow fadeInLeft"
+                    data-wow-delay=".3s"
+                  />
+                  <img
+                    src="images/testimonial/icons/star.svg"
+                    alt=""
+                    class="testim__star wow fadeInLeft"
+                    data-wow-delay=".4s"
+                  />
+                  <img
+                    src="images/testimonial/icons/star.svg"
+                    alt=""
+                    class="testim__star wow fadeInLeft"
+                    data-wow-delay=".5s"
+                  />
+                  <span
+                    class="testim__number wow fadeInRight"
+                    data-wow-delay=".8s"
+                    >5.0</span
+                  >
                 </div>
+                <div class="testim__comment wow fadeInUp" data-wow-delay=".2s">
+                  “With Agency the results are very satisfying. wrapped with
+                  Hight quality and innovative design that makes a surge of
+                  visitors on my website”
+                </div>
+                <div class="testim__user">
+                  <img
+                    src="images/testimonial/avatar-1.jpg"
+                    alt=""
+                    class="testim__avatar wow fadeInUp"
+                    data-wow-delay=".3s"
+                  />
+                  <div class="testim__info">
+                    <div class="testim__name wow fadeInUp" data-wow-delay=".4s">
+                      Renee Wells
+                    </div>
+                    <div class="testim__job wow fadeInUp" data-wow-delay=".5s">
+                      Product Designer, Quotient
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testim__item">
+                <div class="testim__rate">
+                  <img
+                    src="images/testimonial/icons/star.svg"
+                    alt=""
+                    class="testim__star"
+                  />
+                  <img
+                    src="images/testimonial/icons/star.svg"
+                    alt=""
+                    class="testim__star"
+                  />
+                  <img
+                    src="images/testimonial/icons/star.svg"
+                    alt=""
+                    class="testim__star"
+                  />
+                  <img
+                    src="images/testimonial/icons/star.svg"
+                    alt=""
+                    class="testim__star"
+                  />
+                  <img
+                    src="images/testimonial/icons/star.svg"
+                    alt=""
+                    class="testim__star"
+                  />
+                  <span class="testim__number">5.0</span>
+                </div>
+                <div class="testim__comment">
+                  “Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+                  iure ut itaque quos perferendis dolore praesentium.”
+                </div>
+                <div class="testim__user">
+                  <img
+                    src="images/testimonial/avatar-2.jpg"
+                    alt=""
+                    class="testim__avatar"
+                  />
+                  <div class="testim__info">
+                    <div class="testim__name">Diana Gray</div>
+                    <div class="testim__job">Product Consultant, Quotient</div>
+                  </div>
+                </div>
+              </div>
+              <div class="testim__item">
+                <div class="testim__rate">
+                  <img
+                    src="images/testimonial/icons/star.svg"
+                    alt=""
+                    class="testim__star"
+                  />
+                  <img
+                    src="images/testimonial/icons/star.svg"
+                    alt=""
+                    class="testim__star"
+                  />
+                  <img
+                    src="images/testimonial/icons/star.svg"
+                    alt=""
+                    class="testim__star"
+                  />
+                  <img
+                    src="images/testimonial/icons/star.svg"
+                    alt=""
+                    class="testim__star"
+                  />
+                  <img
+                    src="images/testimonial/icons/star.svg"
+                    alt=""
+                    class="testim__star"
+                  />
+                  <span class="testim__number">5.0</span>
+                </div>
+                <div class="testim__comment">
+                  “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nobis officia deleniti, porro reprehenderit magnam
+                  dignissimos!”
+                </div>
+                <div class="testim__user">
+                  <img
+                    src="images/testimonial/avatar-1.jpg"
+                    alt=""
+                    class="testim__avatar"
+                  />
+                  <div class="testim__info">
+                    <div class="testim__name">William Smit</div>
+                    <div class="testim__job">Product Manager, Quotient</div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-
-        <section class="testim section">
-            <div class="container">
-                <div class="testim__top">
-                    <h1 class="title testim__title wow fadeInUp">What our customer are saying</h1>
-                    <p class="testim__text wow fadeInUp" data-wow-delay=".3s">We are trusted numerous companies from different business to meet their needs</p>
-                </div>
-                <div class="testim__inner">
-                    <img src="images/testimonial/icons/quotes.svg" alt="" class="testim__img wow fadeInLeft" >
-                    <div class="testim__slider wow fadeInUp">
-                        <div class="testim__item">
-                            <div class="testim__rate">
-                                <img src="images/testimonial/icons/star.svg" alt="" class="testim__star wow fadeInLeft" data-wow-delay=".1s">
-                                <img src="images/testimonial/icons/star.svg" alt="" class="testim__star wow fadeInLeft" data-wow-delay=".2s">
-                                <img src="images/testimonial/icons/star.svg" alt="" class="testim__star wow fadeInLeft" data-wow-delay=".3s">
-                                <img src="images/testimonial/icons/star.svg" alt="" class="testim__star wow fadeInLeft" data-wow-delay=".4s">
-                                <img src="images/testimonial/icons/star.svg" alt="" class="testim__star wow fadeInLeft" data-wow-delay=".5s">
-                                <span class="testim__number wow fadeInRight" data-wow-delay=".8s">5.0</span>
-                            </div>
-                            <div class="testim__comment wow fadeInUp" data-wow-delay=".2s">
-                                “With Agency the results are very satisfying. wrapped with Hight quality and innovative design that makes a surge of visitors on my website”
-                            </div>
-                            <div class="testim__user">
-                                <img src="images/testimonial/avatar-1.jpg" alt="" class="testim__avatar wow fadeInUp" data-wow-delay=".3s">
-                                <div class="testim__info">
-                                    <div class="testim__name wow fadeInUp" data-wow-delay=".4s">Renee Wells</div>
-                                    <div class="testim__job wow fadeInUp" data-wow-delay=".5s">Product Designer, Quotient</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testim__item">
-                            <div class="testim__rate">
-                                <img src="images/testimonial/icons/star.svg" alt="" class="testim__star">
-                                <img src="images/testimonial/icons/star.svg" alt="" class="testim__star">
-                                <img src="images/testimonial/icons/star.svg" alt="" class="testim__star">
-                                <img src="images/testimonial/icons/star.svg" alt="" class="testim__star">
-                                <img src="images/testimonial/icons/star.svg" alt="" class="testim__star">
-                                <span class="testim__number">5.0</span>
-                            </div>
-                            <div class="testim__comment">
-                                “Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed iure ut itaque quos perferendis dolore praesentium.”
-                            </div>
-                            <div class="testim__user">
-                                <img src="images/testimonial/avatar-2.jpg" alt="" class="testim__avatar">
-                                <div class="testim__info">
-                                    <div class="testim__name">Diana Gray</div>
-                                    <div class="testim__job">Product Consultant, Quotient</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testim__item">
-                            <div class="testim__rate">
-                                <img src="images/testimonial/icons/star.svg" alt="" class="testim__star">
-                                <img src="images/testimonial/icons/star.svg" alt="" class="testim__star">
-                                <img src="images/testimonial/icons/star.svg" alt="" class="testim__star">
-                                <img src="images/testimonial/icons/star.svg" alt="" class="testim__star">
-                                <img src="images/testimonial/icons/star.svg" alt="" class="testim__star">
-                                <span class="testim__number">5.0</span>
-                            </div>
-                            <div class="testim__comment">
-                                “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis officia deleniti, porro reprehenderit magnam dignissimos!”
-                            </div>
-                            <div class="testim__user">
-                                <img src="images/testimonial/avatar-1.jpg" alt="" class="testim__avatar">
-                                <div class="testim__info">
-                                    <div class="testim__name">William Smit</div>
-                                    <div class="testim__job">Product Manager, Quotient</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container footer__inner">
-            <div class="footer__top">
-                <div class="footer__content">
-                    <h1 class="footer__title wow fadeInLeft">Think beyond the wave</h1>
-                    <p class="footer__subtitle wow fadeInLeft" data-wow-delay=".2s">
-                        Ask about Sans products, pricing, implementation, or anything else. Our highly trained reps are standing by, ready to help
-                    </p>
-                </div>
-                <button class="btn footer__btn wow fadeInRight">Try for free</button>
-            </div>
-            <div class="footer__bottom">
-                <div class="footer__descr">
-                    <img src="images/logo.svg" alt="" class="logo wow fadeInLeft" data-wow-delay=".5s">
-                    <p class="footer__text wow fadeInLeft" data-wow-delay="1s">
-                        We built an elegant solution. Our team created a fully integrated sales and marketing solution for SMBs
-                    </p>
-                </div>
-                <div class="footer__links footer__links-desktop">
-                    <ul class="footer__list wow fadeInRight">
-                        <li class="footer__item footer__item-title">Company</li>
-                        <li class="footer__item">
-                            <a href="#">About</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#">Pricing</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#">Jobs</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#">Blog</a>
-                        </li>
-                    </ul>
-                    <ul class="footer__list wow fadeInRight" data-wow-delay=".2s">
-                        <li class="footer__item footer__item-title">Product</li>
-                        <li class="footer__item">
-                            <a href="#">Discover</a></li>
-                        <li class="footer__item">
-                            <a href="#">Sales Software</a></li>
-                        <li class="footer__item">
-                            <a href="#">CRM Comparision</a></li>
-                        <li class="footer__item">
-                            <a href="#">Marketplace</a></li>
-                    </ul>
-                    <ul class="footer__list wow fadeInRight" data-wow-delay=".4s">
-                        <li class="footer__item footer__item-title">Partner Program</li>
-                        <li class="footer__item">
-                            <a href="#">Terms & Conditions</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#">What is CRM</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#">Resource</a>
-                        </li>
-                    </ul>
-                    <ul class="footer__list wow fadeInRight" data-wow-delay=".6s">
-                        <li class="footer__item footer__item-title">Help Center</li>
-                        <li class="footer__item">
-                            <a href="#">Community</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#">Knowledge Base</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#">Academy</a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#">Support</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__links footer__links-mobile">
-                    <ul class="footer__socials">
-                        <li class="wow fadeInRight">
-                            <a href="#">
-                                <img src="images/socials/facebook.svg" alt="" class="footer__img">
-                            </a>
-                        </li>
-                        <li class="wow fadeInRight" data-wow-delay=".1s">
-                            <a href="#">
-                                <img src="images/socials/twitter.svg" alt="" class="footer__img">
-                            </a>
-                        </li>
-                        <li class="wow fadeInRight" data-wow-delay=".2s">
-                            <a href="#">
-                                <img src="images/socials/insta.svg" alt="" class="footer__img">
-                            </a>
-                        </li>
-                        <li class="wow fadeInRight" data-wow-delay=".3s">
-                            <a href="#">
-                                <img src="images/socials/linkedin.svg" alt="" class="footer__img">
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="footer__info">
-                        <li class="wow fadeInUp" data-wow-delay=".4s">
-                            <a href="#" class="footer__link">Privacy Policy</a>              
-                        </li>
-                        <li class="wow fadeInUp" data-wow-delay=".4s">
-                            <a href="#" class="footer__link">Terms & Conditions</a>
-                        </li>
-                        <li class="wow fadeInUp" data-wow-delay=".4s">
-                            <a href="#" class="footer__link">Support</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <img src="images/ellipse-orange.png" alt="" class="footer__back-orange">
+      <div class="container footer__inner">
+        <div class="footer__top">
+          <div class="footer__content">
+            <h1 class="footer__title wow fadeInLeft">Think beyond the wave</h1>
+            <p class="footer__subtitle wow fadeInLeft" data-wow-delay=".2s">
+              Ask about Sans products, pricing, implementation, or anything
+              else. Our highly trained reps are standing by, ready to help
+            </p>
+          </div>
+          <button class="btn footer__btn wow fadeInRight">Try for free</button>
         </div>
-        <img src="images/ellipse-green.png" alt="" class="footer__back-green">
+        <div class="footer__bottom">
+          <div class="footer__descr">
+            <img
+              src="images/logo.svg"
+              alt=""
+              class="logo wow fadeInLeft"
+              data-wow-delay=".5s"
+            />
+            <p class="footer__text wow fadeInLeft" data-wow-delay="1s">
+              We built an elegant solution. Our team created a fully integrated
+              sales and marketing solution for SMBs
+            </p>
+          </div>
+          <div class="footer__links footer__links-desktop">
+            <ul class="footer__list wow fadeInRight">
+              <li class="footer__item footer__item-title">Company</li>
+              <li class="footer__item">
+                <a href="#">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Pricing</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Jobs</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+            <ul class="footer__list wow fadeInRight" data-wow-delay=".2s">
+              <li class="footer__item footer__item-title">Product</li>
+              <li class="footer__item">
+                <a href="#">Discover</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Sales Software</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">CRM Comparision</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Marketplace</a>
+              </li>
+            </ul>
+            <ul class="footer__list wow fadeInRight" data-wow-delay=".4s">
+              <li class="footer__item footer__item-title">Partner Program</li>
+              <li class="footer__item">
+                <a href="#">Terms & Conditions</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">What is CRM</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Resource</a>
+              </li>
+            </ul>
+            <ul class="footer__list wow fadeInRight" data-wow-delay=".6s">
+              <li class="footer__item footer__item-title">Help Center</li>
+              <li class="footer__item">
+                <a href="#">Community</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Knowledge Base</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Academy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links footer__links-mobile">
+            <ul class="footer__socials">
+              <li class="wow fadeInRight">
+                <a href="#">
+                  <img
+                    src="images/socials/facebook.svg"
+                    alt=""
+                    class="footer__img"
+                  />
+                </a>
+              </li>
+              <li class="wow fadeInRight" data-wow-delay=".1s">
+                <a href="#">
+                  <img
+                    src="images/socials/twitter.svg"
+                    alt=""
+                    class="footer__img"
+                  />
+                </a>
+              </li>
+              <li class="wow fadeInRight" data-wow-delay=".2s">
+                <a href="#">
+                  <img
+                    src="images/socials/insta.svg"
+                    alt=""
+                    class="footer__img"
+                  />
+                </a>
+              </li>
+              <li class="wow fadeInRight" data-wow-delay=".3s">
+                <a href="#">
+                  <img
+                    src="images/socials/linkedin.svg"
+                    alt=""
+                    class="footer__img"
+                  />
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__info">
+              <li class="wow fadeInUp" data-wow-delay=".4s">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+              <li class="wow fadeInUp" data-wow-delay=".4s">
+                <a href="#" class="footer__link">Terms & Conditions</a>
+              </li>
+              <li class="wow fadeInUp" data-wow-delay=".4s">
+                <a href="#" class="footer__link">Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img
+          src="images/ellipse-orange.png"
+          alt=""
+          class="footer__back-orange"
+        />
+      </div>
+      <img src="images/ellipse-green.png" alt="" class="footer__back-green" />
     </footer>
 
-    <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
-        <symbol id="arrow" viewBox="0 0 18 18">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.26341 2.9638C9.61488 2.61233 10.1847 2.61233 10.5362 2.9638L15.9362 8.3638C16.2877 8.71527 16.2877 9.28512 15.9362 9.63659L10.5362 15.0366C10.1847 15.3881 9.61488 15.3881 9.26341 15.0366C8.91194 14.6851 8.91194 14.1153 9.26341 13.7638L13.127 9.9002L2.69981 9.9002C2.20275 9.9002 1.7998 9.49725 1.7998 9.0002C1.7998 8.50314 2.20275 8.1002 2.69981 8.1002H13.127L9.26341 4.23659C8.91194 3.88512 8.91194 3.31527 9.26341 2.9638Z"/>
-        </symbol>
-        <symbol id="progress-arrow" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.7071 12.7071C14.3166 13.0976 13.6834 13.0976 13.2929 12.7071L10 9.41421L6.70711 12.7071C6.31658 13.0976 5.68342 13.0976 5.29289 12.7071C4.90237 12.3166 4.90237 11.6834 5.29289 11.2929L9.29289 7.29289C9.68342 6.90237 10.3166 6.90237 10.7071 7.29289L14.7071 11.2929C15.0976 11.6834 15.0976 12.3166 14.7071 12.7071Z"/>
-        </symbol>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="arrow" viewBox="0 0 18 18">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M9.26341 2.9638C9.61488 2.61233 10.1847 2.61233 10.5362 2.9638L15.9362 8.3638C16.2877 8.71527 16.2877 9.28512 15.9362 9.63659L10.5362 15.0366C10.1847 15.3881 9.61488 15.3881 9.26341 15.0366C8.91194 14.6851 8.91194 14.1153 9.26341 13.7638L13.127 9.9002L2.69981 9.9002C2.20275 9.9002 1.7998 9.49725 1.7998 9.0002C1.7998 8.50314 2.20275 8.1002 2.69981 8.1002H13.127L9.26341 4.23659C8.91194 3.88512 8.91194 3.31527 9.26341 2.9638Z"
+        />
+      </symbol>
+      <symbol id="progress-arrow" viewBox="0 0 20 20">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M14.7071 12.7071C14.3166 13.0976 13.6834 13.0976 13.2929 12.7071L10 9.41421L6.70711 12.7071C6.31658 13.0976 5.68342 13.0976 5.29289 12.7071C4.90237 12.3166 4.90237 11.6834 5.29289 11.2929L9.29289 7.29289C9.68342 6.90237 10.3166 6.90237 10.7071 7.29289L14.7071 11.2929C15.0976 11.6834 15.0976 12.3166 14.7071 12.7071Z"
+        />
+      </symbol>
     </svg>
 
     <script src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

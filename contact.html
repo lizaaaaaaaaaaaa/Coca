@@ -22,16 +22,16 @@
         <div class="header__links">
           <nav class="nav" data-wow-delay="0.5s">
             <a href="index.html" class="nav__item">Home</a>
-            <a href="#" class="nav__item">About</a>
+            <a href="about.html" class="nav__item">About</a>
             <a href="#" class="nav__item">Blog</a>
             <a href="#" class="nav__item">Pricing</a>
           </nav>
-          <button class="header__btn" data-wow-delay="1s">
+          <a href="contact.html" class="header__btn" data-wow-delay="1s">
             <span>Contact Us</span>
             <svg class="header__arrow">
               <use xlink:href="#arrow"></use>
             </svg>
-          </button>
+          </a>
         </div>
         <button class="burger wow fadeInRight" data-wow-delay=".2s">
           <span></span>
@@ -41,7 +41,59 @@
       </div>
     </header>
 
-    <main class="main"></main>
+    <main class="main">
+      <div class="container">
+        <h1 class="contact__title">Contact our team to find out more</h1>
+      </div>
+      <section class="section connection">
+        <div class="container connection__inner">
+          <div class="connection__map" style="background-image: url(images/connection/map.svg);">
+            <img
+              src="images/connection/pin.svg"
+              alt=""
+              class="connection__loc"
+            />
+            <img
+              src="images/connection/pin-shadow.svg"
+              alt=""
+              class="connection__shadow"
+            />
+            <div class="connection__address">
+              <h6 class="connection__city">Yogja, INA</h6>
+              <p class="connection__street">
+                100 Smith Street <br />
+                Collingwood VIC 3066 AU
+              </p>
+            </div>
+          </div>
+          <ul class="connection__contacts">
+            <li>
+              <h5 class="connection__title">Support</h5>
+              <p class="connection__text">Our friendly team is here to help.</p>
+              <a href="mailto:support@sans.com" class="connection__link"
+                >support@sans.com</a
+              >
+            </li>
+            <li>
+              <h5 class="connection__title">Sales</h5>
+              <p class="connection__text">
+                Questions or queries? Get in touch!
+              </p>
+              <a href="mailto:sales@sans.com" class="connection__link"
+                >sales@sans.com</a
+              >
+            </li>
+            <li>
+              <h5 class="connection__title">Phone</h5>
+              <p class="connection__text">Mon-Fri from 8am to 5pm.</p>
+              <a href="tel:+14353457655" class="connection__link"
+                >+1 (435) 345-7655</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer footer--dark">
       <div class="container footer__inner">
