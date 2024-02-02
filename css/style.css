@@ -1446,8 +1446,10 @@ footer {
 .connection__loc {
     bottom: 102px;
     right: 127px;
-    animation: bouncingPin 10s infinite;
-    animation-delay: 3s;
+    animation-name: bouncingPin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 17s;
 }
 
 .connection__shadow {
