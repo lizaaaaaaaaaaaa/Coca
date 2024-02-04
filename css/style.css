@@ -1449,7 +1449,7 @@ footer {
     animation-name: bouncingPin;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-delay: 17s;
+    animation-delay: 3s;
 }
 
 .connection__shadow {
@@ -1465,7 +1465,7 @@ footer {
     position: absolute;
     bottom: 156px;
     right: 54px;
-    visibility: 0;
+    visibility: hidden;
     opacity: 0;
     transition: opacity .3s;
 }
@@ -1476,7 +1476,7 @@ footer {
 
 .connection__loc:hover~.connection__address {
     opacity: 1;
-    visibility: 1;
+    visibility: visible;
     transition: opacity .3s;
 }
 
@@ -1516,6 +1516,7 @@ footer {
     font-size: 16px;
     line-height: 1.5;
     padding-bottom: 20px;
+    color: #7E8492;
 }
 
 .connection__link {
@@ -1524,7 +1525,23 @@ footer {
 
 
 
+@media (max-width: 1245px) {
+    .connection__inner {
+        gap: 0 26px;
+    }
 
+    .connection__contacts {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .connection__contacts li {
+        margin-bottom: 0;
+        width: 176px;
+    }
+}
 
 @media (max-width: 1196px) {
     .strength__list {
@@ -1544,6 +1561,11 @@ footer {
 
     .strength__add {
         max-width: 100%;
+    }
+
+    .connection__inner {
+        flex-direction: column;
+        gap: 46px 0;
     }
 }
 
@@ -1574,6 +1596,11 @@ footer {
 
     .testim__comment {
         font-size: 36px;
+    }
+
+    .contact__title {
+        padding: 92px 0 62px;
+        font-size: 67px;
     }
 }
 
@@ -1644,6 +1671,39 @@ footer {
     .quote__text {
         font-size: 21px;
         max-width: 452px;
+    }
+
+    .contact__title {
+        padding: 72px 0 42px;
+        font-size: 62px;
+    }
+}
+
+@media (max-width: 880px) {
+    .connection__map {
+        min-width: 806px;
+    }
+
+    .connection__loc {
+        width: 30px;
+        bottom: 128px;
+        right: 115px;
+    }
+
+    .connection__shadow {
+        bottom: 121px;
+        right: 116px;
+    }
+
+    .connection__address {
+        bottom: 169px;
+        right: 38px;
+    }
+
+    .contact__title {
+        padding: 62px 0 32px;
+        font-size: 57px;
+        letter-spacing: -2px;
     }
 }
 
@@ -1902,6 +1962,35 @@ footer {
     .quote__inner {
         padding-top: 60px;
         padding-bottom: 60px;
+    }
+
+    .connection__map {
+        min-width: 600px;
+        min-height: 340px;
+    }
+
+    .connection__loc,
+    .connection__shadow {
+        display: none;
+    }
+
+    .connection__address {
+        opacity: 1;
+        visibility: visible;
+        bottom: 69px;
+        right: 18px;
+    }
+
+    .connection__street {
+        font-size: 10px;
+    }
+
+    .connection__city {
+        font-size: 12px;
+    }
+
+    .contact__title {
+        font-size: 50px;
     }
 }
 
@@ -2496,6 +2585,43 @@ footer {
         padding-top: 16px;
         padding-bottom: 40px;
     }
+
+    .connection__map {
+        min-width: 500px;
+        min-height: 280px;
+    }
+
+    .connection__address {
+        padding: 10px 13px;
+        bottom: 50px;
+    }
+
+    .connection__city {
+        font-size: 10px;
+    }
+
+    .connection__street {
+        font-size: 8px;
+    }
+
+    .contact__title {
+        font-size: 40px;
+        padding-top: 42px;
+    }
+
+    .connection__contacts li {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .connection__title {
+        font-size: 20px;
+    }
+
+    .connection__text {
+        padding-bottom: 15px;
+        padding-bottom: 8px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -2724,6 +2850,31 @@ footer {
     .quote__text {
         font-size: 14px;
     }
+
+    .connection__title {
+        font-size: 18px;
+    }
+
+    .contact__title {
+        font-size: 35px;
+    }
+
+    .connection__contacts {
+        gap: 24px;
+    }
+
+    .connection__address {
+        padding: 7px 9px;
+        right: 70px;
+    }
+
+    .connection__city {
+        font-size: 8px;
+    }
+
+    .connection__street {
+        font-size: 6px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -2789,6 +2940,34 @@ footer {
     .team__text {
         padding-bottom: 32px;
     }
+
+    .contact__title {
+        font-size: 32px;
+        padding-top: 32px;
+    }
+
+    .connection__title {
+        font-size: 16px;
+    }
+
+    .connection__text,
+    .connection__link {
+        font-size: 14px;
+    }
+
+    .connection__map {
+        min-width: 335px;
+        min-height: 172px;
+    }
+
+    .connection__address {
+        right: 10px;
+        bottom: 30px;
+    }
+
+    .connection__contacts li {
+        width: 144px;
+    }
 }
 
 @keyframes rotateText {
@@ -2813,6 +2992,6 @@ footer {
     }
 
     5% {
-        transform: translateY(-10px);
+        transform: translateY(-15px);
     }
 }
