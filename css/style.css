@@ -1523,6 +1523,105 @@ footer {
     font-weight: 500;
 }
 
+.strength__companies-contact {
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+}
+
+.level-up__wrapper {
+    background: url("../images/level-up.jpg") no-repeat right top;
+    height: 885px;
+}
+
+.level-up__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0;
+    max-width: 608px;
+    padding: 56px 48px;
+    border: 1px solid #CED1D8;
+    background-color: #fff;
+}
+
+.level-up__name {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 32px;
+}
+
+.level-up__label {
+    display: flex;
+    flex-direction: column;
+    gap: 0 6px;
+}
+
+.level-up__input {
+    padding: 10px 14px 10px 6px;
+    border-radius: 8px;
+    border: 1px solid #EDEDED;
+    width: 100%;
+}
+
+.level-up__input-short {
+    width: 240px;
+}
+
+.level-up__input-number {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+}
+
+.level-up__phone {
+    display: flex;
+}
+
+.level-up__select {
+    border-left: 1px solid #EDEDED;
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+    border-right: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 0 22px 0 14px;
+    appearance: none;
+    background: url("../images/icons/chevron-down.svg") no-repeat right center;
+    outline: none;
+    font-size: 14px;
+    color: #1D1E25;
+    font-family: "Inter", sans-serif;
+}
+
+.level-up__textarea {
+    resize: none;
+    width: 100%;
+    height: 134px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #EDEDED;
+}
+
+.level-up__btn {
+    width: 167px;
+}
+
+.level-up__title {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -0.72px;
+}
+
+.level-up__text {
+    color: #7E8492;
+    font-size: 18px;
+}
+
+.level-up__text a {
+    font-weight: 500;
+    color: #1463FF;
+}
 
 
 @media (max-width: 1245px) {
