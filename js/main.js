@@ -99,15 +99,26 @@ const countryCodes = [
 const select = document.getElementById("choosePhone");
 const phone = document.getElementById("phone");
 
-countryCodes.forEach((country) => {
-  const option = document.createElement("option");
-  option.text = country.code;
-  option.value = country.phoneNumber;
-  select.appendChild(option);
-});
+if (select && phone) {
+  countryCodes.forEach((country) => {
+    const option = document.createElement("option");
+    option.text = country.code;
+    option.value = country.phoneNumber;
+    select.appendChild(option);
+  });
 
-select.addEventListener("change", function () {
-  const selectedOption = this.options[this.selectedIndex];
-  const selectedCountryCode = selectedOption.value;
-  phone.placeholder = `${selectedCountryCode}`;
+  select.addEventListener("change", function () {
+    const selectedOption = this.options[this.selectedIndex];
+    const selectedCountryCode = selectedOption.value;
+    phone.placeholder = `${selectedCountryCode}`;
+  });
+}
+
+document.addEventListener("mousemove", function (e) {
+  var cursor = document.querySelector(".cursor-highlight");
+  var offsetX = window.scrollX;
+  var offsetY = window.scrollY;
+  cursor.style.display = "block"; 
+  cursor.style.left = e.clientX + offsetX - 20 + "px"; //положення по горизонталі
+  cursor.style.top = e.clientY + offsetY - 20 + "px"; //по вертикалі
 });

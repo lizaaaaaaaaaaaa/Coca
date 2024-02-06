@@ -1623,6 +1623,18 @@ footer {
     color: #1463FF;
 }
 
+.cursor-highlight {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: rgba(226, 248, 240, 0.70); /* Полупрозрачный белый цвет */
+    position: absolute; /* Абсолютное позиционирование */
+    pointer-events: none; /* Элемент не будет влиять на события мыши */
+    z-index: -1; /* Устанавливаем элемент поверх остальных элементов */
+    display: none; /* По умолчанию скрываем элемент */
+    box-shadow: 0 0 60px 60px rgba(226, 248, 240, 0.70);
+  }
+
 
 @media (max-width: 1245px) {
     .connection__inner {
