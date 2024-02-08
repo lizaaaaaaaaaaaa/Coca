@@ -1553,7 +1553,9 @@ footer {
 .level-up__label {
     display: flex;
     flex-direction: column;
-    gap: 0 6px;
+    gap: 6px 0;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .level-up__input {
@@ -1604,6 +1606,8 @@ footer {
 
 .level-up__btn {
     width: 167px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .level-up__title {
@@ -1616,6 +1620,7 @@ footer {
 .level-up__text {
     color: #7E8492;
     font-size: 18px;
+    padding-bottom: 24px;
 }
 
 .level-up__text a {
@@ -1627,11 +1632,11 @@ footer {
     width: 2px;
     height: 2px;
     border-radius: 50%;
-    background-color: rgba(226, 248, 240, 0.70); /* Полупрозрачный белый цвет */
-    position: absolute; /* Абсолютное позиционирование */
-    pointer-events: none; /* Элемент не будет влиять на события мыши */
-    z-index: -1; /* Устанавливаем элемент поверх остальных элементов */
-    display: none; /* По умолчанию скрываем элемент */
+    background-color: rgba(226, 248, 240, 0.70);
+    position: absolute; 
+    pointer-events: none;
+    z-index: -1; 
+    display: none;
     box-shadow: 0 0 60px 60px rgba(226, 248, 240, 0.70);
   }
 
@@ -1650,7 +1655,7 @@ footer {
 
     .connection__contacts li {
         margin-bottom: 0;
-        width: 176px;
+        width: auto;
     }
 }
 
@@ -1728,6 +1733,10 @@ footer {
     .services__item {
         flex-direction: column;
         gap: 45px 0;
+    }
+
+    .level-up__title {
+        font-size: 32px;
     }
 }
 
@@ -1840,6 +1849,10 @@ footer {
     .quote__inner {
         padding-top: 72px;
         padding-bottom: 72px;
+    }
+
+    .level-up__title {
+        font-size: 27px;
     }
 }
 
@@ -2103,6 +2116,20 @@ footer {
     .contact__title {
         font-size: 50px;
     }
+
+    .level-up__wrapper {
+        background: transparent;
+        height: auto;
+    }
+
+    .level-up__form {
+        margin: 0 auto;
+        padding: 44px 36px;
+    }
+
+    .level-up__title {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -2323,6 +2350,20 @@ footer {
 
     .team__text {
         font-size: 16px;
+    }
+
+    .level-up__text {
+        font-size: 16px;
+        padding-bottom: 12px;
+    }
+
+    .level-up__name {
+        flex-direction: column;
+        gap: 32px 0;
+    }
+
+    .level-up__input-short {
+        width: 100%;
     }
 }
 
@@ -2733,6 +2774,23 @@ footer {
         padding-bottom: 15px;
         padding-bottom: 8px;
     }
+
+    .level-up__title {
+        font-size: 22px;
+    }
+
+    .level-up__form {
+        padding: 32px 24px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+    }
+
+    .level-up__btn {
+        width: 136px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -2986,6 +3044,18 @@ footer {
     .connection__street {
         font-size: 6px;
     }
+
+    .connection__contacts li {
+        width: 176px;
+    }
+
+    .level-up__title {
+        font-size: 20px;
+    }
+
+    .level-up__form {
+        padding: 24px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -3078,6 +3148,15 @@ footer {
 
     .connection__contacts li {
         width: 144px;
+    }
+
+    .level-up__title {
+        font-size: 18px;
+    }
+
+    .level-up__text {
+        font-size: 14px;
+        padding-bottom: 0;
     }
 }
 
