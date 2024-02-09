@@ -8,8 +8,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500&family=Roboto:wght@300;400;500&display=swap"
         rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/chosen-js@1.8.7/chosen.min.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <title>Coca</title>
@@ -27,7 +25,7 @@
                 <nav class="nav" data-wow-delay="0.5s">
                     <a href="index.html" class="nav__item">Home</a>
                     <a href="about.html" class="nav__item">About</a>
-                    <a href="blog.html" class="nav__item">Blog</a>
+                    <a href="#" class="nav__item">Blog</a>
                     <a href="#" class="nav__item">Pricing</a>
                 </nav>
                 <a href="contact.html" class="header__btn" data-wow-delay="1s">
@@ -45,115 +43,7 @@
         </div>
     </header>
 
-    <main class="main">
-        <div class="container">
-            <h1 class="contact__title wow fadeInLeft">
-                Contact our team to find out more
-            </h1>
-        </div>
-        <section class="section connection">
-            <div class="container connection__inner">
-                <div class="connection__map wow fadeInUp" data-wow-delay=".2s"
-                    style="background-image: url(images/connection/map.svg)">
-                    <img src="images/connection/pin.svg" alt="" class="connection__loc wow fadeInDown" />
-                    <img src="images/connection/pin-shadow.svg" alt="" class="connection__shadow wow fadeInDown" />
-                    <div class="connection__address" data-wow-delay=".5s">
-                        <h6 class="connection__city">Yogja, INA</h6>
-                        <p class="connection__street">
-                            100 Smith Street <br />
-                            Collingwood VIC 3066 AU
-                        </p>
-                    </div>
-                </div>
-                <ul class="connection__contacts">
-                    <li class="wow fadeInUp" data-wow-delay=".2s">
-                        <h5 class="connection__title">Support</h5>
-                        <p class="connection__text">Our friendly team is here to help.</p>
-                        <a href="mailto:support@sans.com" class="connection__link">support@sans.com</a>
-                    </li>
-                    <li class="wow fadeInUp" data-wow-delay=".4s">
-                        <h5 class="connection__title">Sales</h5>
-                        <p class="connection__text">
-                            Questions or queries? Get in touch!
-                        </p>
-                        <a href="mailto:sales@sans.com" class="connection__link">sales@sans.com</a>
-                    </li>
-                    <li class="wow fadeInUp" data-wow-delay=".6s">
-                        <h5 class="connection__title">Phone</h5>
-                        <p class="connection__text">Mon-Fri from 8am to 5pm.</p>
-                        <a href="tel:+14353457655" class="connection__link">+1 (435) 345-7655</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section strength">
-            <div class="container strength__inner">
-                <div class="strength__companies strength__companies-contact">
-                    <div class="strength__stat">
-                        <h2 class="strength__number wow fadeInLeft">890+</h2>
-                        <p class="strength__add strength__add-last wow fadeInLeft" data-wow-delay=".2s">
-                            some big companies that we work with, and trust us very much
-                        </p>
-                    </div>
-                    <div class="strength__logos wow fadeInUp" data-wow-delay=".4s">
-                        <img src="images/strength/companies/airbnb.svg" alt="" class="strength__logo" />
-                        <img src="images/strength/companies/amazon.svg" alt="" class="strength__logo" />
-                        <img src="images/strength/companies/fedex.svg" alt="" class="strength__logo" />
-                        <img src="images/strength/companies/microsoft.svg" alt="" class="strength__logo" />
-                        <img src="images/strength/companies/google.svg" alt="" class="strength__logo" />
-                        <img src="images/strength/companies/ola.svg" alt="" class="strength__logo" />
-                        <img src="images/strength/companies/walmart.svg" alt="" class="strength__logo" />
-                        <img src="images/strength/companies/oyo.svg" alt="" class="strength__logo" />
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section level-up" style="overflow: hidden;">
-            <div class="level-up__wrapper" id="parallax">
-                <div class="container">
-                    <form action="" class="level-up__form wow fadeInLeft" method="get">
-                        <h2 class="level-up__title wow fadeInLeft" data-wow-delay=".2s">Let’s level up your brand</h2>
-                        <p class="level-up__text wow fadeInLeft" data-wow-delay=".3s">
-                            You can reach us anytime
-                            <a href="mailto:hellosansbrothers@gmail.com">hellosansbrothers@gmail.com</a>
-                        </p>
-                        <div class="level-up__name wow fadeInUp" data-wow-delay=".3s">
-                            <label for="firstname" class="level-up__label">
-                                First name
-                                <input id="firstname" type="text" class="level-up__input level-up__input-short"
-                                    placeholder="First name" />
-                            </label>
-                            <label for="lastname" class="level-up__label">
-                                Last name
-                                <input id="lastname" type="text" class="level-up__input level-up__input-short"
-                                    placeholder="Last name" />
-                            </label>
-                        </div>
-                        <label for="email" class="level-up__label wow fadeInUp" data-wow-delay=".5s">
-                            Email
-                            <input id="email" type="email" class="level-up__input" placeholder="you@company.com" />
-                        </label>
-                        <label for="phone" class="level-up__label wow fadeInUp" data-wow-delay=".7s">
-                            Phone number
-                            <div class="level-up__phone">
-                                <select name="choosePhone" id="choosePhone" class="level-up__select"></select>
-                                <input id="phone" type="tel" class="level-up__input level-up__input-number"
-                                    placeholder="+1 (555) 000-0000" />
-                            </div>
-                        </label>
-                        <label for="message" class="level-up__label wow fadeInUp" data-wow-delay=".9s">
-                            Message
-                            <textarea name="message" id="message" class="level-up__textarea"
-                                placeholder="Leave us a message..."></textarea>
-                        </label>
-                        <button class="btn level-up__btn wow fadeInUp" data-wow-delay="1.2s" type="submit">Get Started</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
+    <main class="main"></main>
 
     <footer class="footer footer--dark">
         <div class="container footer__inner">
@@ -293,9 +183,7 @@
     </svg>
 
     <script src="js/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chosen-js@1.8.7/chosen.jquery.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>
