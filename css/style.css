@@ -1633,12 +1633,34 @@ footer {
     height: 2px;
     border-radius: 50%;
     background-color: rgba(226, 248, 240, 0.70);
-    position: absolute; 
+    position: absolute;
     pointer-events: none;
-    z-index: -1; 
+    z-index: -1;
     display: none;
     box-shadow: 0 0 60px 60px rgba(226, 248, 240, 0.70);
-  }
+}
+
+.activity {
+    position: relative;
+}
+
+.activity__title {
+    padding-top: 95px;
+    padding-bottom: 53px !important;
+}
+
+.activity__text {
+    padding-left: 90px;
+    max-width: 674px;
+}
+
+.activity__circle {
+    width: 551px;
+    height: 551px;
+    position: absolute;
+    top: 0;
+    left: 51px;
+}
 
 
 @media (max-width: 1245px) {
