@@ -1646,7 +1646,7 @@ footer {
 
 .activity__title {
     padding-top: 95px;
-    padding-bottom: 53px !important;
+    padding-bottom: 53px;
 }
 
 .activity__text {
@@ -1660,6 +1660,7 @@ footer {
     position: absolute;
     top: 0;
     left: 51px;
+    pointer-events: none;
 }
 
 
@@ -1984,6 +1985,15 @@ footer {
 
     .team__text {
         padding: 20px 0 60px;
+    }
+
+    .activity__title {
+        padding-bottom: 48px;
+        padding-top: 65px;
+    }
+
+    .activity__text {
+        padding-left: 73px;
     }
 }
 
@@ -2479,6 +2489,14 @@ footer {
     .team__text {
         padding-bottom: 50px;
     }
+
+    .activity__text {
+        padding-left: 60px;
+    }
+
+    .activity__title {
+        padding: 30px 0 36px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -2813,6 +2831,14 @@ footer {
         width: 136px;
         font-size: 14px;
     }
+
+    .activity__text {
+        padding-left: 50px;
+    }
+
+    .activity__title {
+        padding: 24px 0 36px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -3078,6 +3104,10 @@ footer {
     .level-up__form {
         padding: 24px;
     }
+
+    .activity__text {
+        padding-left: 40px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -3179,6 +3209,15 @@ footer {
     .level-up__text {
         font-size: 14px;
         padding-bottom: 0;
+    }
+
+    .activity__text {
+        padding-left: 32px;
+    }
+
+    .activity__circle {
+        top: -106px;
+        left: -85px;
     }
 }
 
