@@ -1663,6 +1663,40 @@ footer {
     pointer-events: none;
 }
 
+.tabs__inner {
+    padding-top: 138px;
+}
+
+.tabs__btns {
+    padding-bottom: 90px;
+    overflow: visible;
+    width: 780px;
+}
+
+.tabs__btn {
+    color: #7E8492;
+    font-weight: 500;
+}
+
+.tabs__btn--active {
+    color: var(--black);
+    font-weight: 600;
+    position: relative;
+    border-bottom: 1px solid var(--black);
+}
+
+.tabs__btns .slick-track {
+    gap: 0 44px;
+}
+
+.tabs__item {
+    display: none;
+}
+
+.tabs__item.tabs__item--active {
+    display: block;
+}
+
 
 @media (max-width: 1245px) {
     .connection__inner {

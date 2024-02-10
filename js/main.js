@@ -118,7 +118,48 @@ document.addEventListener("mousemove", function (e) {
   var cursor = document.querySelector(".cursor-highlight");
   var offsetX = window.scrollX;
   var offsetY = window.scrollY;
-  cursor.style.display = "block"; 
+  cursor.style.display = "block";
   cursor.style.left = e.clientX + offsetX - 20 + "px"; //положення по горизонталі
   cursor.style.top = e.clientY + offsetY - 20 + "px"; //по вертикалі
+});
+
+const tabItem = document.querySelectorAll(".tabs__btn");
+const tabContent = document.querySelectorAll(".tabs__item");
+
+tabItem.forEach(function (element) {
+  element.addEventListener("click", open);
+});
+
+function open(evt) {
+  const tabTarget = evt.currentTarget;
+  const button = tabTarget.dataset.button;
+
+  //забирати клас щоб змінити колір тексту на звичайний
+  tabItem.forEach(function (item) {
+    item.classList.remove("tabs__btn--active");
+  });
+
+  // щоб змінити колір тексту на синій тлбто активний елемент
+  tabTarget.classList.add("tabs__btn--active");
+
+  tabContent.forEach(function (item) {
+    item.classList.remove("tabs__item--active");
+  });
+
+  document.querySelector(`#${button}`).classList.add("tabs__item--active");
+}
+
+$(".tabs__btns").slick({
+  arrows: false,
+  variableWidth: true,
+  infinite: false,
+  swipe: false,
+  responsive: [
+    {
+      breakpoint: 720,
+      settings: {
+        swipe: true
+      },
+    },
+  ],
 });
