@@ -151,15 +151,22 @@ function open(evt) {
 
 $(".tabs__btns").slick({
   arrows: false,
-  variableWidth: true,
   infinite: false,
+  variableWidth: true,
   swipe: false,
   responsive: [
     {
       breakpoint: 720,
       settings: {
-        swipe: true
+        swipe: true,
       },
     },
   ],
+});
+
+$(".tabs__item").slick({
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  variableWidth: true,
 });
