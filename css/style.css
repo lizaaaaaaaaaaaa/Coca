@@ -1892,6 +1892,10 @@ footer {
         padding: 72px 0 42px;
         font-size: 62px;
     }
+
+    .tabs__inner {
+        padding-top: 108px;
+    }
 }
 
 @media (max-width: 880px) {
@@ -2067,6 +2071,10 @@ footer {
     .activity__text {
         padding-left: 73px;
     }
+
+    .tabs__btns {
+        padding-bottom: 70px;
+    }
 }
 
 @media (max-width: 775px) {
@@ -2233,6 +2241,30 @@ footer {
 
     .level-up__title {
         font-size: 24px;
+    }
+
+    .tabs__item .slick-slide {
+        max-width: 415px;
+    }
+
+    .tabs__title {
+        font-size: 26px;
+    }
+
+    .tabs__text {
+        font-size: 18px;
+    }
+
+    .tabs__img {
+        height: 328px;
+    }
+
+    .tabs__inner {
+        padding-top: 78px;
+    }
+
+    .tabs__btns {
+        padding-bottom: 50px;
     }
 }
 
@@ -2469,6 +2501,10 @@ footer {
     .level-up__input-short {
         width: 100%;
     }
+
+    .tabs__title {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -2568,6 +2604,27 @@ footer {
 
     .activity__title {
         padding: 30px 0 36px;
+    }
+
+    .tabs__img {
+        height: 268px;
+    }
+
+    .tabs__item .slick-slide {
+        max-width: 355px;
+    }
+
+    .tabs__published {
+        font-size: 10px;
+        padding: 12px 0 20px;
+    }
+
+    .tabs__text {
+        font-size: 16px;
+    }
+
+    .tabs__item .slick-track {
+        gap: 0 24px;
     }
 }
 
@@ -2911,6 +2968,14 @@ footer {
     .activity__title {
         padding: 24px 0 36px;
     }
+
+    .tabs__inner {
+        padding-top: 52px;
+    }
+
+    .tabs__btns {
+        padding-bottom: 40px;
+    }
 }
 
 @media (max-width: 460px) {
@@ -3180,6 +3245,31 @@ footer {
     .activity__text {
         padding-left: 40px;
     }
+
+    .tabs__published {
+        display: none;
+    }
+
+    .tabs__title {
+        font-size: 18px;
+        padding: 12px 0;
+    }
+
+    .tabs__img {
+        height: 205px;
+    }
+
+    .tabs__item .slick-slide {
+        max-width: 247px;
+    }
+
+    .tabs__text {
+        font-size: 14px;
+    }
+    
+    .tabs__item .slick-track {
+        gap: 0 16px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -3290,6 +3380,15 @@ footer {
     .activity__circle {
         top: -106px;
         left: -85px;
+    }
+
+    .tabs__title {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    .tabs__btn {
+        font-size: 14px;
     }
 }
 
