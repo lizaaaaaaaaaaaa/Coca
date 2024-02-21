@@ -170,3 +170,11 @@ $(".tabs__item").slick({
   autoplaySpeed: 5000,
   variableWidth: true,
 });
+
+$(".articles__slider").slick({
+  arrows: false,
+  variableWidth: true,
+  infinite: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+});

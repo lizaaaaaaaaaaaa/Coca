@@ -66,6 +66,12 @@ footer {
     border-radius: 100px;
 }
 
+.btn-reverse {
+    border: 1px solid #ced1d8;
+    background-color: transparent;
+    color: var(--black);
+}
+
 .title {
     color: #1d1e25;
     font-size: 56px;
@@ -1774,7 +1780,7 @@ footer {
     line-height: 1.2;
 }
 
-.questions__title:hover{
+.questions__title:hover {
     text-decoration-line: underline;
 }
 
@@ -1785,6 +1791,52 @@ footer {
     padding-top: 24px;
 }
 
+.articles {
+    padding-top: 160px;
+}
+
+.articles__top {
+    padding-bottom: 80px;
+}
+
+.articles__text {
+    font-weight: 500;
+    color: #7e8492;
+    padding-top: 24px;
+    max-width: 435px;
+}
+
+.articles__slider {
+    overflow: hidden;
+    min-width: 1352px;
+}
+
+.articles__slider .slick-track {
+    gap: 0 32px;
+}
+
+.articles__item {
+    height: auto;
+    max-width: 436px;
+}
+
+.articles__img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.articles__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.3;
+    padding-top: 24px;
+    width: 100%;
+}
+
+.articles__btn {
+    margin-top: 24px;
+}
 
 
 
