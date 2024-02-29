@@ -1797,6 +1797,10 @@ footer {
 
 .articles__top {
     padding-bottom: 80px;
+    display: flex;
+    gap: 0 50px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .articles__text {
@@ -1838,6 +1842,26 @@ footer {
     margin-top: 24px;
 }
 
+.articles__arrows {
+    display: flex;
+    gap: 0 16px;
+    align-items: center;
+}
+
+.articles__arrow-prev,
+.articles__arrow-next {
+    color: #fff;
+    border-radius: 100px;
+    padding: 14px 15px;
+    border: 1px solid var(--black);
+    background-color: var(--black);
+}
+
+.articles__arrows .slick-disabled {
+    background-color: transparent;
+    color: #7e8492;
+    border: 1px solid #7e8492;
+}
 
 
 @media (max-width: 1245px) {

@@ -172,9 +172,11 @@ $(".tabs__item").slick({
 });
 
 $(".articles__slider").slick({
-  arrows: false,
+  arrows: true,
   variableWidth: true,
   infinite: false,
   slidesToShow: 3,
   slidesToScroll: 1,
+  prevArrow: $(".articles__arrow-prev"),
+  nextArrow: $(".articles__arrow-next"),
 });
